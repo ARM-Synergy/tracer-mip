@@ -8,7 +8,7 @@ The DOE ARM [Tracking Aerosol Convection Interaction Experiment (TRACER) campaig
 
 ## Goals and Hypotheses of the TRACER-MIP
 
-# Goals
+### Goals
 
 test test test by Soumya
 
