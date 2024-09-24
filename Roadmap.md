@@ -95,11 +95,30 @@ For models that can represent **aerosol hygroscopicity**, we are using a single 
 <<<<< Fig-5
 
 
+## Appendix A: Additional summary of June 17, 2022 case study event  
+
+* Seabreeze convection and large-scale convection scattered over the Houston area domain. 
+* Overlaps with ESCAPE (aircraft & ground operations).
+* Mostly clean marine aerosols.
+* SMPS data collected. ACSM data not collected.
+* NU-WRF realtime modeling skill score: 71
+
+The figures that follow provide information for the July 17 event including daily soundings (Fig. A.1), observed precipitation (Fig. A.2), GOES GeoColor imagery 2-hourly (Fig A.3), NEXRAD composite reflectivity 2-hourly (Fig. A.4), cell distribution from NEXRAD data using MCIT cell tracking (Fig. A.5), and SMPS aerosol conditions for the day and for model initial surface aerosol concentration (Fig A.6).
+
+<<<<< Figs-A1, A2, A3, A4, A5, A6
 
 
+## Appendix B: Additional summary of August 7, 2022 case study event
 
+* Early sea-breeze, consistent onshore flow. Isolated convection day.
+* Moist throughout the column.
+* CHIVO Radar available and TAMU Observations available.
+*  Polluted aerosols early, clean marine after sea-breeze.
+*  SMPS & ACSM data were collected.
+*  NU-WRF realtime modeling skill score: 70
 
+The figures that follow provide information for the July 17 event including daily soundings (Fig. B.1), observed precipitation (Fig. B.2), GOES GeoColor imagery 2-hourly (Fig B.3), NEXRAD composite reflectivity 2-hourly (Fig. B.4), cell distribution from NEXRAD data using MCIT cell tracking (Fig. B.5), and SMPS aerosol conditions for the day and for model initial surface aerosol concentration (Fig B.6).
 
-
+<<<<< Figs-B1, B2, B3, B4, B5, B6
 
 
