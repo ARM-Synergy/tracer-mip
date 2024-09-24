@@ -18,6 +18,10 @@ The DOE ARM [Tracking Aerosol Convection Interaction Experiment (TRACER) campaig
 1. The different representations of condensation and ice microphysics are a major source of  inter-model spread, thus, leading to the main model differences in the simulation of ACI.
 2. The models that reproduce the observed cases and employ explicit calculation of condensation give qualitatively consistent ACI effects, particularly for the effect of ultrafine particles.
 
+## Approach and Cases
+The TRACER-MIP follows and builds upon the ACPC-MIP. The ACPC-MIP roadmap document can be found at this [link](http://acpcinitiative.org/Docs/ACPC_DCC_Roadmap_171019.pdf). The TRACER-MIP has the following new features:
+
+
 
 ================================================================
 
