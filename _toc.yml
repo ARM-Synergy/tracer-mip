@@ -1,6 +1,6 @@
 format: jb-book
 root: README
 parts:
-- caption: Notebooks
-  chapters:
-    - glob: Notebooks/*
+- caption: Project Information
+  chapters: 
+    - file: Roadmap.md
