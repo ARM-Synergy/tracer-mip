@@ -10,8 +10,8 @@ The DOE ARM [Tracking Aerosol Convection Interaction Experiment (TRACER) campaig
 
 ### Goals
 
-i) Quantify the inter-model spread in representation of aerosol-convection interactions (ACI), identify model deficiencies, and measure model performance. .
-ii) Examine factors/processes leading to the model biases and large model spread, both of which were less emphasized in the previous ACPC-MIP. This effort will ultimately help reduce the ACI uncertainty. 
+1. Quantify the inter-model spread in representation of aerosol-convection interactions (ACI), identify model deficiencies, and measure model performance.
+2. Examine factors/processes leading to the model biases and large model spread, both of which were less emphasized in the previous ACPC-MIP. This effort will ultimately help reduce the ACI uncertainty. 
 
 
 ## Model Inputs
