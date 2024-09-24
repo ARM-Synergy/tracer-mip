@@ -28,7 +28,7 @@ Two cases were chosen to simulate from among several 'Golden' TRACER cases, whic
 * Data available - SMPS aerosols (with ultrafine aerosols measured), soundings (5 per day), NEXRAD CAPPI, C-SAPR cell tracking.
 * Seabreeze present, convection observed, and cells tracked.
 
-![TRACER MIP Figure 1](figures/TRACER_MIP_Fig1.jpeg)
+![TRACER MIP Figure 1](Figures/TRACER_MIP_Fig01.jpeg)
 ***Figure 1. The soundings (left), Stage IV precipitation (middle), and the pre-convective aerosol size distribution (right) measured at the TRACER main site by SMPS for the June 17 case.***
 
 The June 17 case has widespread convection, featured with an afternoon sea breeze induced thunderstorm in the Houston area (Figure 1) with a high aerosol condition (~ 4000 cm<sup>-3</sup>; > 10 nm). This case has aircraft measurements from the co-current NSF ESCAPE field campaign. The August 7 case has a morning sea breeze front and a thunderstorm in the early afternoon in the Houston area with relatively cleaner aerosol conditions (~1700 cm<sup>-3</sup>; > 10 nm).
