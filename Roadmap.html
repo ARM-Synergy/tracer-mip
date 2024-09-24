@@ -400,7 +400,7 @@ document.write(`
 <h2>4. Simulations Summary<a class="headerlink" href="#simulations-summary" title="Link to this heading">#</a></h2>
 <p>For each case described above, we are requesting three simulations:</p>
 <ul class="simple">
-<li><p>Control simulation using the pre-convective aerosol profiles with the 2 aerosol modes. (See the dual modes represented in the right panels of figures 1 &amp; 2.)</p></li>
+<li><p>Control simulation using the pre-convective aerosol profiles with the 2 aerosol modes. (See the dual modes represented in the right panels of Figures 1 &amp; 2.)</p></li>
 <li><p>Same as control but with aerosol number concentration of each mode <strong>3x higher</strong>.</p></li>
 <li><p>Same as control but with aerosol number concentration of each mode <strong>3x lower (i.e., multiple by a coefficient of 0.3)</strong>.</p></li>
 </ul>
@@ -428,6 +428,15 @@ document.write(`
 <p>&lt;&lt;&lt;&lt;&lt; Table-3</p>
 <p>The aerosol number concentrations were originally provided in volume units of cm<sup>-3</sup>. To apply this to models that carry aerosols in number and mass units of kg<sup>-1</sup> and kg kg<sup>-1</sup>, we convert the volume units to mixing ratio units using a representative surface air density (1.159 kg m<sup>-3</sup>) near the AMF1 site.</p>
 <p>The left panel of Figure 4, below, shows the idealized vertical profile of normalized aerosol concentration derived from the Chen et al. (2024) methodology above using the TRACER observations from 1200-1400 LT on 7 Aug 2022 (data for this type of analysis were not available on 17 June, so we use this profile as being reasonably representative of the Houston area during the IOP). The middle and right panels display the respective applied profiles to be used in the control simulations for the two aerosol modes identified from the pre-convective time periods on 17 June and 7 August.</p>
+<p>&lt;&lt;&lt;&lt;&lt; Fig-4</p>
+<p>The shape profile in the left panel above is represented by the following function fit to the dry aerosol backscatter (and then scaled from 0 to 1):</p>
+<p>&lt;&lt;&lt;&lt;&lt; Equation-1</p>
+<p>The aerosol surface concentrations in # mg<sup>-1</sup> were then applied to the idealized vertical shape profile (Figure 4, left) to arrive at the case study control simulation shape profiles in Figure 4 (center, right). The vertical profiles apply an additional constraint such that the total (mode-1 + mode-2) number concentration does not drop below 50 mg<sup>-1</sup> at any altitude and scales with the surface aerosol number concentrations. Details of this application can be found in the Jupyter notebook linked below.</p>
+<p>The link to the Jupyter notebook with aerosol number concentration control simulation vertical profiles is found at: <a class="reference external" href="https://drive.google.com/file/d/1Oz7Eb3TLnWkH3N1gY0FXUnQYWSKc_N3J/view?usp=drive_link">Pyplt.TRACER_Aerosol_Profiles_MIP.ipynb</a>. It is used for plotting the initial aerosol vertical profiles and for viewing the precise aerosol concentration at each vertical level for each aerosol mode. This code can be readily adapted to individual MIP model coding language (e.g., Fortran) for initializing aerosol profiles. Aerosol profiles are to be initialized horizontally, homogeneously across the domains of both grid nests.</p>
+<p>Initialization of aerosol vertical profiles for the <strong>3 x higher</strong> and <strong>3 x lower</strong> sensitivity simulations simply requires <strong>3 x</strong> or <strong>⅓ x</strong> of the provided surface aerosol concentrations (# cm<sup>-3</sup>) of each mode, conversion to mixing ratio units based on provided air density (# mg<sup>-1</sup>), and then re-creation of the vertical profiles based on those updated numbers.</p>
+<p>If your model can represent the aerosol distribution <strong>mode sigma</strong>, please use the sigma values provided in the table; otherwise use your model’s default values.</p>
+<p>For models that can represent <strong>aerosol hygroscopicity</strong>, we are using a single and constant bulk <strong>kappa value of 0.26</strong> (Figure 5) which corresponds to the full TRACER campaign 50th percentile value of the bulk kappa derived from the AMF1 Aerosol Observing System (AOS) at LaPorte, TX (courtesy of Maria Zawadowicz, BNL).</p>
+<p>&lt;&lt;&lt;&lt;&lt; Fig-5</p>
 </section>
 </section>
 

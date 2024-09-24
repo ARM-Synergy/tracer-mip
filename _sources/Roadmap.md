@@ -40,7 +40,7 @@ A [TRACER-MIP GitHub page](https://github.com/ARM-Synergy/tracer-mip) has been e
 
 ## 4. Simulations Summary
 For each case described above, we are requesting three simulations:
-* Control simulation using the pre-convective aerosol profiles with the 2 aerosol modes. (See the dual modes represented in the right panels of figures 1 & 2.)
+* Control simulation using the pre-convective aerosol profiles with the 2 aerosol modes. (See the dual modes represented in the right panels of Figures 1 & 2.)
 * Same as control but with aerosol number concentration of each mode **3x higher**.
 * Same as control but with aerosol number concentration of each mode **3x lower (i.e., multiple by a coefficient of 0.3)**.
 
@@ -76,7 +76,23 @@ The aerosol number concentrations were originally provided in volume units of cm
 
 The left panel of Figure 4, below, shows the idealized vertical profile of normalized aerosol concentration derived from the Chen et al. (2024) methodology above using the TRACER observations from 1200-1400 LT on 7 Aug 2022 (data for this type of analysis were not available on 17 June, so we use this profile as being reasonably representative of the Houston area during the IOP). The middle and right panels display the respective applied profiles to be used in the control simulations for the two aerosol modes identified from the pre-convective time periods on 17 June and 7 August.
 
+<<<<< Fig-4
 
+The shape profile in the left panel above is represented by the following function fit to the dry aerosol backscatter (and then scaled from 0 to 1):
+
+<<<<< Equation-1
+
+The aerosol surface concentrations in # mg<sup>-1</sup> were then applied to the idealized vertical shape profile (Figure 4, left) to arrive at the case study control simulation shape profiles in Figure 4 (center, right). The vertical profiles apply an additional constraint such that the total (mode-1 + mode-2) number concentration does not drop below 50 mg<sup>-1</sup> at any altitude and scales with the surface aerosol number concentrations. Details of this application can be found in the Jupyter notebook linked below.
+
+The link to the Jupyter notebook with aerosol number concentration control simulation vertical profiles is found at: [Pyplt.TRACER_Aerosol_Profiles_MIP.ipynb](https://drive.google.com/file/d/1Oz7Eb3TLnWkH3N1gY0FXUnQYWSKc_N3J/view?usp=drive_link). It is used for plotting the initial aerosol vertical profiles and for viewing the precise aerosol concentration at each vertical level for each aerosol mode. This code can be readily adapted to individual MIP model coding language (e.g., Fortran) for initializing aerosol profiles. Aerosol profiles are to be initialized horizontally, homogeneously across the domains of both grid nests.
+
+Initialization of aerosol vertical profiles for the **3 x higher** and **3 x lower** sensitivity simulations simply requires **3 x** or **⅓ x** of the provided surface aerosol concentrations (# cm<sup>-3</sup>) of each mode, conversion to mixing ratio units based on provided air density (# mg<sup>-1</sup>), and then re-creation of the vertical profiles based on those updated numbers.
+
+If your model can represent the aerosol distribution **mode sigma**, please use the sigma values provided in the table; otherwise use your model’s default values.
+
+For models that can represent **aerosol hygroscopicity**, we are using a single and constant bulk **kappa value of 0.26** (Figure 5) which corresponds to the full TRACER campaign 50th percentile value of the bulk kappa derived from the AMF1 Aerosol Observing System (AOS) at LaPorte, TX (courtesy of Maria Zawadowicz, BNL).
+
+<<<<< Fig-5
 
 
 
