@@ -29,8 +29,44 @@ Two cases were chosen to simulate from among several 'Golden' TRACER cases, whic
 
 The June 17 case has widespread convection, featured with an afternoon sea breeze induced thunderstorm in the Houston area (Figure 1) with a high aerosol condition (~ 4000 cm-3; > 10 nm). This case has aircraft measurements from the co-current NSF ESCAPE field campaign. The August 7 case has a morning sea breeze front and a thunderstorm in the early afternoon in the Houston area with relatively cleaner aerosol conditions (~1700 cm-3; > 10 nm). 
 
-<<<Fig-2
+<<<<<Fig-2
 
 A [TRACER-MIP GitHub page](https://github.com/ARM-Synergy/tracer-mip) has been established for sharing this roadmap document as well as other documentation and updates, analysis codes, model & parameterization descriptions, etc.
+
+
+## 4. Simulations Summary
+
+For each case described above, we are requesting three simulations:
+* Control simulation using the pre-convective aerosol profiles with the 2 aerosol modes. (See the dual modes represented in the right panels of figures 1 & 2.)
+* Same as control but with aerosol number concentration of each mode 3x higher.
+* Same as control but with aerosol number concentration of each mode 3x lower (i.e., multiple by a coefficient of 0.3).
+
+Details of the simulation design and initialization are provided in the sections that follow.
+
+## 5. Model Setup
+
+We ask all participants to use the following model configuration given in the table below. The nested grid domains are shown below in Figure 3. The inner domain Grid-2 is the same as the innermost nest from the ACPC-MIP. Table 1 presents model setup details. For each of the aerosol sensitivity simulations discussed below, to avoid the complications from size distribution change, we ask to keep the shape of the aerosol size distributions identical. We will solely change the initial aerosol number concentration vertical profiles by multiplying the observed surface number concentration by the coefficients (3x and ⅓ x) and generating the associated initialization vertical profiles for the sensitivity simulations. This means we are exploring the effect of aerosol number changes on clouds only. We also ask that all participants provide a file that contains a description of their model, descriptions of the parameterizations (i.e., microphysics, turbulence, land surface, etc.) used with associated references, and an overview of the output variable names and units. The table of requested output variables and units is provided in Table 2 . Please conform to this request of variables and units as much as possible.
+
+<<<<< Fig-3
+
+<<<<< Table-1
+
+
+## 6. Output of Model Variables
+
+Table 2 describes the necessary model variables to output and the associated units. If your model writes all variables for each grid and time to an individual file, then please provide the full output files (one file per grid per time for each grid). Please also provide a separate document that outlines (1) assumptions and parameters used to define the hydrometeor and aerosol size distributions and the aerosol Tier option, (2) mass-diameter relationships and fall speed equations for each hydrometeor class (or equivalent for your model), and (3) ice category properties. Please note the details regarding the output diagnostic microphysical process rates and their units. For models to participate in the process rate analysis, these rates need to be provided in the requested units.
+
+
+<<<<< Table-2
+
+
+
+
+
+
+
+
+
+
 
 
