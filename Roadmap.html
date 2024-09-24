@@ -332,7 +332,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-and-hypotheses-of-the-tracer-mip">2. Goals and Hypotheses of the TRACER-MIP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-and-hypotheses-of-the-tracer-mip">2. Goals and Hypotheses of the TRACER-MIP</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hypotheses">Hypotheses:</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach-and-cases">3. Approach and Cases</a></li>
 </ul>
             </nav>
@@ -353,27 +357,39 @@ document.write(`
 </section>
 <section id="goals-and-hypotheses-of-the-tracer-mip">
 <h2>2. Goals and Hypotheses of the TRACER-MIP<a class="headerlink" href="#goals-and-hypotheses-of-the-tracer-mip" title="Link to this heading">#</a></h2>
-<p>Goals:
-i) Quantify the inter-model spread in representation of aerosol-convection interactions (ACI), identify model deficiencies, and measure model performance. .
-ii) Examine factors/processes leading to the model biases and large model spread, both of which were less emphasized in the previous ACPC-MIP. This effort will ultimately help reduce the ACI uncertainty.
-Hypotheses:
-i) The different representations of condensation and ice microphysics are a major source of  inter-model spread, thus, leading to the main model differences in the simulation of ACI.
-ii) The models that reproduce the observed cases and employ explicit calculation of condensation give qualitatively consistent ACI effects, particularly for the effect of ultrafine particles.</p>
+<section id="goals">
+<h3>Goals:<a class="headerlink" href="#goals" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Quantify the inter-model spread in representation of aerosol-convection interactions (ACI), identify model deficiencies, and measure model performance. .</p></li>
+<li><p>Examine factors/processes leading to the model biases and large model spread, both of which were less emphasized in the previous ACPC-MIP. This effort will ultimately help reduce the ACI uncertainty.</p></li>
+</ol>
+</section>
+<section id="hypotheses">
+<h3>Hypotheses:<a class="headerlink" href="#hypotheses" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>The different representations of condensation and ice microphysics are a major source of  inter-model spread, thus, leading to the main model differences in the simulation of ACI.</p></li>
+<li><p>The models that reproduce the observed cases and employ explicit calculation of condensation give qualitatively consistent ACI effects, particularly for the effect of ultrafine particles.</p></li>
+</ol>
+</section>
 </section>
 <section id="approach-and-cases">
 <h2>3. Approach and Cases<a class="headerlink" href="#approach-and-cases" title="Link to this heading">#</a></h2>
-<p>The TRACER-MIP follows and builds upon the ACPC-MIP. The ACPC-MIP roadmap document can be found at this link.The TRACER-MIP has the following new features:</p>
-<p>Extensive model evaluation against observations.
-Two golden cases with varying dynamic, thermodynamic, and aerosol conditions. Ultrafine aerosol will be considered. Two tiers: prescribed and prognostic aerosols.
-More detailed focus on factors/processes leading to model biases and large model spread.
-Two cases were chosen to simulate from among several “Golden” TRACER cases, which are June 17 and August 7, 2022 (Figures 1 and 2). Cases below were chosen since they met the following criteria:
-Data available - SMPS aerosols (with ultrafine aerosols measured), soundings (5 per day), NEXRAD CAPPI, C-SAPR cell tracking
-Seabreeze present, convection observed, and cells tracked
-The June 17 case has widespread convection, featured with an afternoon sea breeze induced thunderstorm in the Houston area (Figure 1) with a high aerosol condition (~ 4000 cm-3; &gt; 10 nm). This case has aircraft measurements from the co-current NSF ESCAPE field campaign. The August 7 case has a morning sea breeze front and a thunderstorm in the early afternoon in the Houston area with relatively cleaner aerosol conditions (~1700 cm-3; &gt; 10 nm).
-A TRACER-MIP GitHub page has been established for sharing this roadmap document as well as other documentation and updates, analysis codes, model &amp; parameterization descriptions, etc.
-https://github.com/ARM-Synergy/tracer-mip</p>
+<p>The TRACER-MIP follows and builds upon the ACPC-MIP. The ACPC-MIP roadmap document can be found at this <a class="reference external" href="http://acpcinitiative.org/Docs/ACPC_DCC_Roadmap_171019.pdf">link</a>. The TRACER-MIP has the following new features:</p>
+<ul class="simple">
+<li><p>Extensive model evaluation against observations.</p></li>
+<li><p>Two golden cases with varying dynamic, thermodynamic, and aerosol conditions. Ultrafine aerosol will be considered. Two tiers: prescribed and prognostic aerosols.</p></li>
+<li><p>More detailed focus on factors/processes leading to model biases and large model spread.</p></li>
+</ul>
+<p>Two cases were chosen to simulate from among several ‘Golden’ TRACER cases, which are June 17 and August 7, 2022 (Figures 1 and 2). Cases below were chosen since they met the following criteria:</p>
+<ul class="simple">
+<li><p>Data available - SMPS aerosols (with ultrafine aerosols measured), soundings (5 per day), NEXRAD CAPPI, C-SAPR cell tracking.</p></li>
+<li><p>Seabreeze present, convection observed, and cells tracked.</p></li>
+</ul>
 <p><img alt="TRACER MIP Figure 1" src="_images/Mip_Fig1.png" />
 <em><strong>Figure 1. The soundings (left), Stage IV precipitation (middle), and the pre-convective aerosol size distribution (right) measured at the TRACER main site by SMPS for the June 17 case.</strong></em></p>
+<p>The June 17 case has widespread convection, featured with an afternoon sea breeze induced thunderstorm in the Houston area (Figure 1) with a high aerosol condition (~ 4000 cm-3; &gt; 10 nm). This case has aircraft measurements from the co-current NSF ESCAPE field campaign. The August 7 case has a morning sea breeze front and a thunderstorm in the early afternoon in the Houston area with relatively cleaner aerosol conditions (~1700 cm-3; &gt; 10 nm).</p>
+<p>&lt;&lt;&lt;Fig-2</p>
+<p>A <a class="reference external" href="https://github.com/ARM-Synergy/tracer-mip">TRACER-MIP GitHub page</a> has been established for sharing this roadmap document as well as other documentation and updates, analysis codes, model &amp; parameterization descriptions, etc.</p>
 </section>
 </section>
 
@@ -433,7 +449,11 @@ https://github.com/ARM-Synergy/tracer-mip</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-and-hypotheses-of-the-tracer-mip">2. Goals and Hypotheses of the TRACER-MIP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-and-hypotheses-of-the-tracer-mip">2. Goals and Hypotheses of the TRACER-MIP</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hypotheses">Hypotheses:</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach-and-cases">3. Approach and Cases</a></li>
 </ul>
   </nav></div>
