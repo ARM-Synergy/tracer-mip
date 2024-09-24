@@ -21,6 +21,10 @@ The DOE ARM [Tracking Aerosol Convection Interaction Experiment (TRACER) campaig
 ## Approach and Cases
 The TRACER-MIP follows and builds upon the ACPC-MIP. The ACPC-MIP roadmap document can be found at this [link](http://acpcinitiative.org/Docs/ACPC_DCC_Roadmap_171019.pdf). The TRACER-MIP has the following new features:
 
+* Extensive model evaluation against observations. 
+* Two golden cases with varying dynamic, thermodynamic, and aerosol conditions. Ultrafine aerosol will be considered. Two tiers: prescribed and prognostic aerosols.
+* More detailed focus on factors/processes leading to model biases and large model spread.
+
 
 
 ================================================================
