@@ -21,7 +21,7 @@ The TRACER-MIP follows and builds upon the ACPC-MIP. The ACPC-MIP roadmap docume
 * Two golden cases with varying dynamic, thermodynamic, and aerosol conditions. Ultrafine aerosol will be considered. Two tiers: prescribed and prognostic aerosols.
 * More detailed focus on factors/processes leading to model biases and large model spread.
 
-Two cases were chosen to simulate from among several “Golden” TRACER cases, which are June 17 and August 7, 2022 (Figures 1 and 2). Cases below were chosen since they met the following criteria:
+Two cases were chosen to simulate from among several 'Golden' TRACER cases, which are June 17 and August 7, 2022 (Figures 1 and 2). Cases below were chosen since they met the following criteria:
 * Data available - SMPS aerosols (with ultrafine aerosols measured), soundings (5 per day), NEXRAD CAPPI, C-SAPR cell tracking.
 * Seabreeze present, convection observed, and cells tracked.
 
