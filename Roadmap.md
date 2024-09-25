@@ -86,10 +86,8 @@ We ask all participants to use the following model configuration given in the ta
 | LW and SW Radiation | Please use the best option for your model. Please call every 60 seconds |
 
 
-
 ## 6. Output of Model Variables
 Table 2 describes the necessary model variables to output and the associated units. If your model writes all variables for each grid and time to an individual file, then please provide the full output files (one file per grid per time for each grid). Please also provide a separate document that outlines (1) assumptions and parameters used to define the hydrometeor and aerosol size distributions and the aerosol Tier option, (2) mass-diameter relationships and fall speed equations for each hydrometeor class (or equivalent for your model), and (3) ice category properties. Please note the details regarding the output diagnostic microphysical process rates and their units. For models to participate in the process rate analysis, these rates need to be provided in the requested units.
-
 
 
 **Table 2: Model outputs required to submit**
@@ -134,15 +132,6 @@ Table 2 describes the necessary model variables to output and the associated uni
 |*For all microphysical process rates (aside from latent heating), units are (kg/kg/second) or (kg/kg/integrated-time) where “integrated-time” is the sum of the rates between output writing times. For example, if output files are written every 2-minutes, the process rates are the integrated sum (at each grid cell) over that 2-minute period of time. “Integrated-time” is preferred so that the average rate between model output writing time can be computed. Please be clear which units are used for process rates.|
 
 
-
-
-
-
-
-
-
-
-
 ## 7. Data Submission and Timeline
 Data storage will be provided by the DOE, and we are in the process of establishing this storage space and granting user access. Detailed  information about data submission will be provided to the participants. Please let Steve Saleeby (Stephen.Saleeby@colostate.edu) and Jiwen Fan (fanj@anl.gov) know if you want to participate so that you can receive further guidance from us about this MIP.
 
@@ -152,7 +141,17 @@ Data storage will be provided by the DOE, and we are in the process of establish
 ## 8. Aerosol Initialization
 The aerosol initial conditions for each case have been constructed via a combination of (1) the surface aerosol particle size distributions from the SMPS at the TRACER AMF1 site in LaPorte, TX (courtesy of Tamanna Subba and Chongai Kuang from BNL) and (2) the aerosol vertical shape profile derived from coincident micropulse lidar and radiosonde data that are used to compute the cloud-free aerosol backscatter coefficient profile (courtesy of Bo Chen, Anita Rapp, & Sarah Brooks from Texas A&M Univ). For details, please refer to Chen et al. (2024). The 2-mode aerosol size distribution is shown in Table 3 and Figure 4 with an ultrafine aerosol mode peaking at 30 nm (June 17) and 50 nm (Aug. 7) in diameter, and an accumulation mode peaking at 135 nm (June 17) and 175 nm (Aug. 7). Aerosol mode characteristics for each case are shown in Appendices A & B and summarized in Table 3.
 
-<<<<< Table-3
+
+**Table 3: The 2-mode aerosol size distribution specification**
+
+| June 17, 2022  | Mode-1 | Mode-2 | Aug 7, 2022  | Mode-1 | Mode-2 |
+|---|---|---|---|---|---|
+| Aerosol Number <br> (ρsfc ~ 1.159 kg m-3) |3443 cm-3 <br> (2970 mg-1) | 531 cm-3 <br> (458 mg-1) | Aerosol Number <br> (ρsfc ~ 1.159 kg m-3) | 1425 cm-3 <br> (1229 mg-1) | 263 cm-3 <br> (226 mg-1) |
+| Median Diameter | 30 nm | 136 nm | Median Diameter | 49 nm | 175 nm |
+| Mode Sigma | 1.5 | 1.5 | Mode Sigma | 1.8 | 1.4 |
+
+<br>
+
 
 The aerosol number concentrations were originally provided in volume units of cm<sup>-3</sup>. To apply this to models that carry aerosols in number and mass units of kg<sup>-1</sup> and kg kg<sup>-1</sup>, we convert the volume units to mixing ratio units using a representative surface air density (1.159 kg m<sup>-3</sup>) near the AMF1 site. 
 
