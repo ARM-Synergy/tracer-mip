@@ -172,6 +172,7 @@ The left panel of Figure 4, below, shows the idealized vertical profile of norma
 The shape profile in the left panel above is represented by the following function fit to the dry aerosol backscatter (and then scaled from 0 to 1):
 
 **<<<<< Equation-1**
+![TRACER MIP Figure Eqn1](Figures/TRACER_MIP_Equation1.png)
 
 The aerosol surface concentrations in # mg<sup>-1</sup> were then applied to the idealized vertical shape profile (Figure 4, left) to arrive at the case study control simulation shape profiles in Figure 4 (center, right). The vertical profiles apply an additional constraint such that the total (mode-1 + mode-2) number concentration does not drop below 50 mg<sup>-1</sup> at any altitude and scales with the surface aerosol number concentrations. Details of this application can be found in the Jupyter notebook linked below.
 
