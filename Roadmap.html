@@ -492,10 +492,12 @@ document.write(`
 </tbody>
 </table>
 </div>
+<br>
 </section>
 <section id="output-of-model-variables">
 <h2>6. Output of Model Variables<a class="headerlink" href="#output-of-model-variables" title="Link to this heading">#</a></h2>
 <p>Table 2 describes the necessary model variables to output and the associated units. If your model writes all variables for each grid and time to an individual file, then please provide the full output files (one file per grid per time for each grid). Please also provide a separate document that outlines (1) assumptions and parameters used to define the hydrometeor and aerosol size distributions and the aerosol Tier option, (2) mass-diameter relationships and fall speed equations for each hydrometeor class (or equivalent for your model), and (3) ice category properties. Please note the details regarding the output diagnostic microphysical process rates and their units. For models to participate in the process rate analysis, these rates need to be provided in the requested units.</p>
+<br>
 <p><strong>Table 2: Model outputs required to submit</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -580,6 +582,7 @@ document.write(`
 </tbody>
 </table>
 </div>
+<br>
 </section>
 <section id="data-submission-and-timeline">
 <h2>7. Data Submission and Timeline<a class="headerlink" href="#data-submission-and-timeline" title="Link to this heading">#</a></h2>
@@ -589,6 +592,7 @@ document.write(`
 <section id="aerosol-initialization">
 <h2>8. Aerosol Initialization<a class="headerlink" href="#aerosol-initialization" title="Link to this heading">#</a></h2>
 <p>The aerosol initial conditions for each case have been constructed via a combination of (1) the surface aerosol particle size distributions from the SMPS at the TRACER AMF1 site in LaPorte, TX (courtesy of Tamanna Subba and Chongai Kuang from BNL) and (2) the aerosol vertical shape profile derived from coincident micropulse lidar and radiosonde data that are used to compute the cloud-free aerosol backscatter coefficient profile (courtesy of Bo Chen, Anita Rapp, &amp; Sarah Brooks from Texas A&amp;M Univ). For details, please refer to Chen et al. (2024). The 2-mode aerosol size distribution is shown in Table 3 and Figure 4 with an ultrafine aerosol mode peaking at 30 nm (June 17) and 50 nm (Aug. 7) in diameter, and an accumulation mode peaking at 135 nm (June 17) and 175 nm (Aug. 7). Aerosol mode characteristics for each case are shown in Appendices A &amp; B and summarized in Table 3.</p>
+<br>
 <p><strong>Table 3: The 2-mode aerosol size distribution specification</strong></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -631,7 +635,7 @@ document.write(`
 <p><img alt="TRACER MIP Figure 4" src="_images/TRACER_MIP_Fig04.jpeg" />
 <em><strong>Figure 4: The derived aerosol concentration (# mg<sup>-1</sup>) vertical profiles of two fitted aerosol modes from AMF1 observations taken during the pre-convective periods on 17 June (left) and 7 August (right), respectively.</strong></em></p>
 <p>The shape profile in the left panel above is represented by the following function fit to the dry aerosol backscatter (and then scaled from 0 to 1):</p>
-<p>&lt;&lt;&lt;&lt;&lt; Equation-1</p>
+<p><strong>&lt;&lt;&lt;&lt;&lt; Equation-1</strong></p>
 <p>The aerosol surface concentrations in # mg<sup>-1</sup> were then applied to the idealized vertical shape profile (Figure 4, left) to arrive at the case study control simulation shape profiles in Figure 4 (center, right). The vertical profiles apply an additional constraint such that the total (mode-1 + mode-2) number concentration does not drop below 50 mg<sup>-1</sup> at any altitude and scales with the surface aerosol number concentrations. Details of this application can be found in the Jupyter notebook linked below.</p>
 <p>The link to the Jupyter notebook with aerosol number concentration control simulation vertical profiles is found at: <a class="reference external" href="https://drive.google.com/file/d/1Oz7Eb3TLnWkH3N1gY0FXUnQYWSKc_N3J/view?usp=drive_link">Pyplt.TRACER_Aerosol_Profiles_MIP.ipynb</a>. It is used for plotting the initial aerosol vertical profiles and for viewing the precise aerosol concentration at each vertical level for each aerosol mode. This code can be readily adapted to individual MIP model coding language (e.g., Fortran) for initializing aerosol profiles. Aerosol profiles are to be initialized horizontally, homogeneously across the domains of both grid nests.</p>
 <p>Initialization of aerosol vertical profiles for the <strong>3 x higher</strong> and <strong>3 x lower</strong> sensitivity simulations simply requires <strong>3 x</strong> or <strong>⅓ x</strong> of the provided surface aerosol concentrations (# cm<sup>-3</sup>) of each mode, conversion to mixing ratio units based on provided air density (# mg<sup>-1</sup>), and then re-creation of the vertical profiles based on those updated numbers.</p>
