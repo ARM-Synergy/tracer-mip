@@ -262,6 +262,21 @@ The figures that follow provide information for the July 17 event including dail
 
 
 
+## References:
+
+Chen, B., Thompson, S.A., Matthews, B.H., Sharma, M., Li, R., Nowotarski, C.J., Rapp, A.D., and Brooks, S.D., 2024: A new technique to retrieve aerosol, CCN, and INP vertical profiles using the Micropulse lidar and ground-based aerosol measurements during the TRACER campaign. (In preparation)
+
+<br>
+
+Saleeby, S.M., S.C van den Heever, P.J. Marinescu, M. Oue, A.I. Barrett, C. Barthlott, R. Cherian, J. Fan, A.M. Fridlind, M. Heikenfeld, C. Hoose, T. Matsui, A.K. Miltenberger, J. Quaas, J. Shpund, P. Stier, B. Vie, B.A. White, Y. Zhang, 2025: Model intercomparison of the impacts of varying cloud droplet nucleating aerosols on the lifecycle and microphysics of deep convection. J. Atmos Sci. (In revision)
+
+<br>
+
+van den Heever, S.C., and Coauthors, 2017: Aerosol-Cloud-Precipitation-Climate (ACPC) initiative: Deep Convective Cloud Group roadmap. ACPC Rep., 13 pp., [http://acpcinitiative.org/Docs/ACPC_DCC_Roadmap_171019.pdf](http://acpcinitiative.org/Docs/ACPC_DCC_Roadmap_171019.pdf).
+
+<br>
+
+van den Heever, S.C., P.J. Marinescu, M. Heikenfeld, B. White, A. Fridlind, P. Stier, M. Andreae, A. Barrett, C. Barthlott, R. Cherian, J. Fan, C. Hoose, T. Matsui, A. Miltenberger, J. Quaas, D. Rosenfeld, J. Shpund, B. Vie, Y. Zhang, and Stephen M. Saleeby 2025: A model intercomparison project exploring aerosol impacts on deep convective clouds. Bull. Amer. Met. Soc. (In preparation)
 
 
 
