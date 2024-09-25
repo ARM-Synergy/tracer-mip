@@ -155,7 +155,7 @@ The aerosol initial conditions for each case have been constructed via a combina
 
 | June 17, 2022  | Mode-1 | Mode-2 | Aug 7, 2022  | Mode-1 | Mode-2 |
 |---|---|---|---|---|---|
-| Aerosol Number <br> (ρsfc ~ 1.159 kg m-3) |3443 cm-3 <br> (2970 mg-1) | 531 cm-3 <br> (458 mg-1) | Aerosol Number <br> (ρsfc ~ 1.159 kg m-3) | 1425 cm-3 <br> (1229 mg-1) | 263 cm-3 <br> (226 mg-1) |
+| Aerosol Number <br> (ρ<sub>sfc</sub> ~ 1.159 kg m<sup>-3</sup>) |3443 cm<sup>-3</sup> <br> (2970 mg<sup>-1</sup>) | 531 cm<sup>-3</sup> <br> (458 mg<sup>-1</sup>) | Aerosol Number <br> (ρ<sub>sfc</sub> ~ 1.159 kg m<sup>-3</sup>) | 1425 cm<sup>-3</sup> <br> (1229 mg<sup>-1</sup>) | 263 cm<sup>-3</sup> <br> (226 mg<sup>-1</sup>) |
 | Median Diameter | 30 nm | 136 nm | Median Diameter | 49 nm | 175 nm |
 | Mode Sigma | 1.5 | 1.5 | Mode Sigma | 1.8 | 1.4 |
 
