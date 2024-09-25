@@ -496,7 +496,90 @@ document.write(`
 <section id="output-of-model-variables">
 <h2>6. Output of Model Variables<a class="headerlink" href="#output-of-model-variables" title="Link to this heading">#</a></h2>
 <p>Table 2 describes the necessary model variables to output and the associated units. If your model writes all variables for each grid and time to an individual file, then please provide the full output files (one file per grid per time for each grid). Please also provide a separate document that outlines (1) assumptions and parameters used to define the hydrometeor and aerosol size distributions and the aerosol Tier option, (2) mass-diameter relationships and fall speed equations for each hydrometeor class (or equivalent for your model), and (3) ice category properties. Please note the details regarding the output diagnostic microphysical process rates and their units. For models to participate in the process rate analysis, these rates need to be provided in the requested units.</p>
-<p>&lt;&lt;&lt;&lt;&lt; Table-2</p>
+<p><strong>Table 2: Model outputs required to submit</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Model outputs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Atmospheric State (3D)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Pressure (Pa or hPa)</p></td>
+</tr>
+<tr class="row-even"><td><p>Height (m)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Air density (kg/m<sup>3</sup>)</p></td>
+</tr>
+<tr class="row-even"><td><p>U-wind (m/s) (east is +)</p></td>
+</tr>
+<tr class="row-odd"><td><p>V-wind (m/s) (north is +)</p></td>
+</tr>
+<tr class="row-even"><td><p>W-wind (m/s) (up is +)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Water Variables (3D)</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Water vapor mixing ratio (kg/kg)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cloud water mixing ratio (kg/kg)</p></td>
+</tr>
+<tr class="row-even"><td><p>Cloud droplet number concentration (#/kg)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rain water mixing ratio (kg/kg)</p></td>
+</tr>
+<tr class="row-even"><td><p>Raindrop number concentration (#/kg)</p></td>
+</tr>
+<tr class="row-odd"><td><p>qX, nX (kg/kg, #/kg): Provide hydrometeor mass mixing ratios and number concentration for each X ice hydrometeor class in your model.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>2D Variables</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Geographic latitude / longitude (degrees)</p></td>
+</tr>
+<tr class="row-even"><td><p>Topography (m)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Instantaneous surface precipitation rate  (mm/sec)</p></td>
+</tr>
+<tr class="row-even"><td><p>Surface precipitation accumulated over simulation (mm)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sea-level pressure (Pa or hPa)</p></td>
+</tr>
+<tr class="row-even"><td><p>Surface sensible and latent heat fluxes (W/m<sup>2</sup>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Surface albedo (fraction)</p></td>
+</tr>
+<tr class="row-even"><td><p>Surface and TOA upward and downward SW and LW radiative fluxes (W/m<sup>2</sup>) (8 total radiation variables here)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2-m temperature and 10-m wind if available.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Aerosol Variables (if the interactive aerosol option - Tier 2 is used)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Aerosol mass mixing ratio (kg/kg) (separately for all available aerosol modes)</p></td>
+</tr>
+<tr class="row-even"><td><p>Aerosol number concentration (#/kg) (separately for all available aerosol modes)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Aerosol effective radius or median radius of the distribution (m) (separately for all available aerosol modes)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Microphysical Process Rates</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Latent heating and cooling (K/sec) <em>(heating +, cooling -)</em></p></td>
+</tr>
+<tr class="row-even"><td><p>Liquid condensation, Liquid evaporation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ice deposition, Ice sublimation</p></td>
+</tr>
+<tr class="row-even"><td><p>Melting, Freezing <em>(totals from various mechanisms)</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>Cloud droplet nucleation, Ice crystal nucleation</p></td>
+</tr>
+<tr class="row-even"><td><p>Riming of cloud droplets, Riming of rain drops (may be combined for bin models)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Autoconversion + Accretion <em>(conversion of cloud water to rain water through collision processes of liquid drops for bin models)</em></p></td>
+</tr>
+<tr class="row-even"><td><p>*For all microphysical process rates (aside from latent heating), units are (kg/kg/second) or (kg/kg/integrated-time) where “integrated-time” is the sum of the rates between output writing times. For example, if output files are written every 2-minutes, the process rates are the integrated sum (at each grid cell) over that 2-minute period of time. “Integrated-time” is preferred so that the average rate between model output writing time can be computed. Please be clear which units are used for process rates.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="data-submission-and-timeline">
 <h2>7. Data Submission and Timeline<a class="headerlink" href="#data-submission-and-timeline" title="Link to this heading">#</a></h2>

@@ -90,7 +90,57 @@ We ask all participants to use the following model configuration given in the ta
 ## 6. Output of Model Variables
 Table 2 describes the necessary model variables to output and the associated units. If your model writes all variables for each grid and time to an individual file, then please provide the full output files (one file per grid per time for each grid). Please also provide a separate document that outlines (1) assumptions and parameters used to define the hydrometeor and aerosol size distributions and the aerosol Tier option, (2) mass-diameter relationships and fall speed equations for each hydrometeor class (or equivalent for your model), and (3) ice category properties. Please note the details regarding the output diagnostic microphysical process rates and their units. For models to participate in the process rate analysis, these rates need to be provided in the requested units.
 
-<<<<< Table-2
+
+
+**Table 2: Model outputs required to submit**
+|Model outputs|
+|---|
+|**Atmospheric State (3D)**|
+|Pressure (Pa or hPa)|
+|Height (m)|
+|Air density (kg/m<sup>3</sup>)|
+|U-wind (m/s) (east is +)|
+|V-wind (m/s) (north is +)|
+|W-wind (m/s) (up is +)|
+|**Water Variables (3D)**|
+|Water vapor mixing ratio (kg/kg)|
+|Cloud water mixing ratio (kg/kg)|
+|Cloud droplet number concentration (#/kg)|
+|Rain water mixing ratio (kg/kg)|
+|Raindrop number concentration (#/kg)|
+|qX, nX (kg/kg, #/kg): Provide hydrometeor mass mixing ratios and number concentration for each X ice hydrometeor class in your model.|
+|**2D Variables**|
+|Geographic latitude / longitude (degrees)|
+|Topography (m)|
+|Instantaneous surface precipitation rate  (mm/sec)|
+|Surface precipitation accumulated over simulation (mm)|
+|Sea-level pressure (Pa or hPa)|
+|Surface sensible and latent heat fluxes (W/m<sup>2</sup>)|
+|Surface albedo (fraction)|
+|Surface and TOA upward and downward SW and LW radiative fluxes (W/m<sup>2</sup>) (8 total radiation variables here)|
+|2-m temperature and 10-m wind if available.|
+|**Aerosol Variables (if the interactive aerosol option - Tier 2 is used)**|
+|Aerosol mass mixing ratio (kg/kg) (separately for all available aerosol modes) |
+|Aerosol number concentration (#/kg) (separately for all available aerosol modes) |
+|Aerosol effective radius or median radius of the distribution (m) (separately for all available aerosol modes)|
+|**Microphysical Process Rates**|
+|Latent heating and cooling (K/sec) *(heating +, cooling -)*|
+|Liquid condensation, Liquid evaporation|
+|Ice deposition, Ice sublimation|
+|Melting, Freezing *(totals from various mechanisms)*|
+|Cloud droplet nucleation, Ice crystal nucleation|
+|Riming of cloud droplets, Riming of rain drops (may be combined for bin models)|
+|Autoconversion + Accretion *(conversion of cloud water to rain water through collision processes of liquid drops for bin models)*|
+|*For all microphysical process rates (aside from latent heating), units are (kg/kg/second) or (kg/kg/integrated-time) where “integrated-time” is the sum of the rates between output writing times. For example, if output files are written every 2-minutes, the process rates are the integrated sum (at each grid cell) over that 2-minute period of time. “Integrated-time” is preferred so that the average rate between model output writing time can be computed. Please be clear which units are used for process rates.|
+
+
+
+
+
+
+
+
+
 
 
 ## 7. Data Submission and Timeline
