@@ -81,7 +81,7 @@ The aerosol number concentrations were originally provided in volume units of cm
 The left panel of Figure 4, below, shows the idealized vertical profile of normalized aerosol concentration derived from the Chen et al. (2024) methodology above using the TRACER observations from 1200-1400 LT on 7 Aug 2022 (data for this type of analysis were not available on 17 June, so we use this profile as being reasonably representative of the Houston area during the IOP). The middle and right panels display the respective applied profiles to be used in the control simulations for the two aerosol modes identified from the pre-convective time periods on 17 June and 7 August.
 
 ![TRACER MIP Figure 4](Figures/TRACER_MIP_Fig04.jpeg)
-***Figure 4: The derived aerosol concentration (# mg-1) vertical profiles of two fitted aerosol modes from AMF1 observations taken during the pre-convective periods on 17 June (left) and 7 August (right), respectively.***
+***Figure 4: The derived aerosol concentration (# mg<sup>-1</sup>) vertical profiles of two fitted aerosol modes from AMF1 observations taken during the pre-convective periods on 17 June (left) and 7 August (right), respectively.***
 
 The shape profile in the left panel above is represented by the following function fit to the dry aerosol backscatter (and then scaled from 0 to 1):
 
