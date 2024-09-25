@@ -111,7 +111,30 @@ For models that can represent **aerosol hygroscopicity**, we are using a single 
 
 The figures that follow provide information for the July 17 event including daily soundings (Fig. A.1), observed precipitation (Fig. A.2), GOES GeoColor imagery 2-hourly (Fig A.3), NEXRAD composite reflectivity 2-hourly (Fig. A.4), cell distribution from NEXRAD data using MCIT cell tracking (Fig. A.5), and SMPS aerosol conditions for the day and for model initial surface aerosol concentration (Fig A.6).
 
-<<<<< Figs-A1, A2, A3, A4, A5, A6
+
+![TRACER MIP Figure A1](Figures/TRACER_MIP_FigA01.jpeg)
+
+***Figure A.1: June 17, 2022 TRACER AMF1 radiosonde soundings overlaid for the event day.***
+
+
+![TRACER MIP Figure A2](Figures/TRACER_MIP_FigA02.jpeg)
+***Figure A.2: June 17, 2022 event accumulated precipitation (18 hour accumulation from 1200 UTC event day) from the Stage-IV 4-km (left) and Multi-Radar / Multi-Sensor (MRMS) 1-km (right) gridded precipitation.***
+
+
+![TRACER MIP Figure A3](Figures/TRACER_MIP_FigA03.jpeg)
+***Figure A.3: June 17, 2022 GeoColor satellite imagery every 2-hours during the daytime convective period shown in Local Time LT (courtesy of CIRA/NOAA).***
+
+
+![TRACER MIP Figure A4](Figures/TRACER_MIP_FigA04.jpeg)
+***Figure A.4: June 17, 2022 NEXRAD CAPPI at 1.5km AGL every 2-hours during the daytime convective period shown in Local Time LT (courtesy of Zackary Mages, Stonybrook University).***
+
+
+![TRACER MIP Figure A5](Figures/TRACER_MIP_FigA05.jpeg)
+***Figure A.5: June 17, 2022 frequency of occurrence of tracked cells using NEXRAD data and MCIT cell tracking algorithm (courtesy of Zackary Mages, Stonybrook University).***
+
+
+![TRACER MIP Figure A6](Figures/TRACER_MIP_FigA06.jpeg)
+***Figure A.6: June 17, 2022 (top left) diurnal variation of size distribution from SMPS, (right) multi-modal aerosol size distribution curve fitting, and (lower left) pre-convective aerosol distribution characterization values for model control run simulations. (Number concentrations are in units of #/cm3 and median diameters are in units of nanometers). (courtesy of Tamanna Subba and Chongai Kuang, BNL).***
 
 
 ## Appendix B: Additional summary of August 7, 2022 case study event
