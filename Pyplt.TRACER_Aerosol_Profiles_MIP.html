@@ -1,0 +1,880 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; Cookbook Template</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script data-domain="my-domain" defer="defer" src="https://plausible.io/js/script.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Pyplt.TRACER_Aerosol_Profiles_MIP';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/arm_logo.png" class="logo__image only-light" alt="Cookbook Template - Home"/>
+    <script>document.write(`<img src="_static/arm_logo.png" class="logo__image only-dark" alt="Cookbook Template - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Project Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Roadmap.html">Tracking Aerosol Convection Interaction Experiment (TRACER) Model Intercomparison Project (MIP) Roadmap</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://jupyterhub.arm.gov/hub/user-redirect/git-pull?repo=https%3A//github.com/ARM-Development/arm-cookbook-template&urlpath=lab/tree/arm-cookbook-template/notebooks/Pyplt.TRACER_Aerosol_Profiles_MIP.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Pyplt.TRACER_Aerosol_Profiles_MIP.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">###################################################################################################</span>
+<span class="c1"># Create vertical profiles of aerosols by using observed multi-mode surface concentrations (#/cm3)</span>
+<span class="c1"># from the AMF1 site at LaPorte (provided by Chongai Kuang and Tamanna Subba) and applying a</span>
+<span class="c1"># vertical shape function up to ~ 6 km altitude (provided by Bo Chen and the groups at Texas A&amp;M).</span>
+<span class="c1"># TAMU proiles were only available for certain periods, so this script uses the shape of the </span>
+<span class="c1"># Aug 7, 2022 for all case days. Aerosol concentrations are in ambient #/cm3 units, so we convert</span>
+<span class="c1"># to #/mg for modeling using an air density estimate near the surface from model initial conditions</span>
+<span class="c1"># (from ERA-5 reanalysis) for the Aug 7, 2022 event. The air density for conversion from #/cm3 to</span>
+<span class="c1"># #/mg was 1.159 kg/m3. Following the conversion to #/mg, the vertical shape profile was applied to</span>
+<span class="c1"># the surface concentration up to 6 km altitude. Above that, a background concentration of X/mg</span>
+<span class="c1"># (specified below) was applied and split across the number of aerosol modes proportioned by total number.</span>
+<span class="c1">###################################################################################################</span>
+<span class="kn">import</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">font</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span><span class="p">:</span><span class="s1">&#39;verdana&#39;</span><span class="p">,</span><span class="s1">&#39;size&#39;</span><span class="p">:</span><span class="mi">14</span><span class="p">,</span><span class="s1">&#39;weight&#39;</span><span class="p">:</span><span class="s1">&#39;bold&#39;</span><span class="p">}</span>
+<span class="n">mpl</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">font</span><span class="p">)</span>
+<span class="n">font_axestitle</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">font_title</span>     <span class="o">=</span> <span class="mi">18</span>
+<span class="c1"># Flag to print a table of aerosol profiles in addition to the plots</span>
+<span class="n">print_profile</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># Flag to output profile plots to files</span>
+<span class="n">plot_to_file</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="c1"># Minimum aerosol number concentration per mg-air (#/mg)</span>
+<span class="n">min_aero</span><span class="o">=</span><span class="mi">50</span>
+<span class="c1"># Max height to plot (km)</span>
+<span class="n">max_hgt_plot</span><span class="o">=</span><span class="mi">7</span>
+
+<span class="c1"># Choose which set of these profiles to plot in the list variable &quot;plotlist&quot; below.</span>
+<span class="c1"># 1: June 17  - Pre-convective control profiles</span>
+<span class="c1"># 2: August 7 - Pre-convective control profiles</span>
+<span class="n">plotlist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="c1"># Vertical levels (km) to compute concentration to plot</span>
+<span class="n">heights</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">22000</span><span class="p">,</span><span class="mi">66</span><span class="p">)</span>
+<span class="n">heights</span><span class="o">=</span><span class="n">heights</span><span class="o">/</span><span class="mi">1000</span>
+
+<span class="c1"># Altitude vs Base state air density from Aug 07, 2022 Houston TRACER simulation setup using</span>
+<span class="c1"># ERA5 reanalysis for initial conditions. These variables provide the model level altitudes (AGL)</span>
+<span class="c1"># from the RAMS sigma-Z vertical coordinate and the associated initital base state density profile</span>
+<span class="c1"># (from a sea level grid cell).</span>
+
+<span class="c1"># Model scalar vertical level altitudes in meters (AGL)</span>
+<span class="n">altitude</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>\
+         <span class="o">-</span><span class="mi">24</span><span class="p">,</span>    <span class="mi">24</span><span class="p">,</span>    <span class="mi">76</span><span class="p">,</span>   <span class="mi">130</span><span class="p">,</span>   <span class="mi">186</span><span class="p">,</span>   <span class="mi">245</span><span class="p">,</span>   <span class="mi">308</span><span class="p">,</span>   <span class="mi">373</span><span class="p">,</span>   <span class="mi">442</span><span class="p">,</span>   <span class="mi">514</span><span class="p">,</span>\
+         <span class="mi">590</span><span class="p">,</span>   <span class="mi">669</span><span class="p">,</span>   <span class="mi">752</span><span class="p">,</span>   <span class="mi">840</span><span class="p">,</span>   <span class="mi">932</span><span class="p">,</span>  <span class="mi">1028</span><span class="p">,</span>  <span class="mi">1130</span><span class="p">,</span>  <span class="mi">1236</span><span class="p">,</span>  <span class="mi">1348</span><span class="p">,</span>  <span class="mi">1466</span><span class="p">,</span>\
+        <span class="mi">1589</span><span class="p">,</span>  <span class="mi">1718</span><span class="p">,</span>  <span class="mi">1854</span><span class="p">,</span>  <span class="mi">1997</span><span class="p">,</span>  <span class="mi">2147</span><span class="p">,</span>  <span class="mi">2304</span><span class="p">,</span>  <span class="mi">2470</span><span class="p">,</span>  <span class="mi">2643</span><span class="p">,</span>  <span class="mi">2825</span><span class="p">,</span>  <span class="mi">3016</span><span class="p">,</span>\
+        <span class="mi">3217</span><span class="p">,</span>  <span class="mi">3428</span><span class="p">,</span>  <span class="mi">3650</span><span class="p">,</span>  <span class="mi">3882</span><span class="p">,</span>  <span class="mi">4126</span><span class="p">,</span>  <span class="mi">4383</span><span class="p">,</span>  <span class="mi">4652</span><span class="p">,</span>  <span class="mi">4935</span><span class="p">,</span>  <span class="mi">5230</span><span class="p">,</span>  <span class="mi">5531</span><span class="p">,</span>\
+        <span class="mi">5831</span><span class="p">,</span>  <span class="mi">6131</span><span class="p">,</span>  <span class="mi">6431</span><span class="p">,</span>  <span class="mi">6731</span><span class="p">,</span>  <span class="mi">7031</span><span class="p">,</span>  <span class="mi">7331</span><span class="p">,</span>  <span class="mi">7631</span><span class="p">,</span>  <span class="mi">7931</span><span class="p">,</span>  <span class="mi">8231</span><span class="p">,</span>  <span class="mi">8531</span><span class="p">,</span>\
+        <span class="mi">8831</span><span class="p">,</span>  <span class="mi">9131</span><span class="p">,</span>  <span class="mi">9431</span><span class="p">,</span>  <span class="mi">9731</span><span class="p">,</span> <span class="mi">10031</span><span class="p">,</span> <span class="mi">10331</span><span class="p">,</span> <span class="mi">10631</span><span class="p">,</span> <span class="mi">10931</span><span class="p">,</span> <span class="mi">11231</span><span class="p">,</span> <span class="mi">11531</span><span class="p">,</span>\
+       <span class="mi">11831</span><span class="p">,</span> <span class="mi">12131</span><span class="p">,</span> <span class="mi">12431</span><span class="p">,</span> <span class="mi">12731</span><span class="p">,</span> <span class="mi">13031</span><span class="p">,</span> <span class="mi">13331</span><span class="p">,</span> <span class="mi">13631</span><span class="p">,</span> <span class="mi">13931</span><span class="p">,</span> <span class="mi">14231</span><span class="p">,</span> <span class="mi">14531</span><span class="p">,</span>\
+       <span class="mi">14831</span><span class="p">,</span> <span class="mi">15131</span><span class="p">,</span> <span class="mi">15431</span><span class="p">,</span> <span class="mi">15731</span><span class="p">,</span> <span class="mi">16031</span><span class="p">,</span> <span class="mi">16331</span><span class="p">,</span> <span class="mi">16631</span><span class="p">,</span> <span class="mi">16931</span><span class="p">,</span> <span class="mi">17231</span><span class="p">,</span> <span class="mi">17531</span><span class="p">,</span>\
+       <span class="mi">17831</span><span class="p">,</span> <span class="mi">18131</span><span class="p">,</span> <span class="mi">18431</span><span class="p">,</span> <span class="mi">18731</span><span class="p">,</span> <span class="mi">19031</span><span class="p">,</span> <span class="mi">19331</span><span class="p">,</span> <span class="mi">19631</span><span class="p">,</span> <span class="mi">19931</span><span class="p">,</span> <span class="mi">20231</span><span class="p">,</span> <span class="mi">20531</span><span class="p">,</span>\
+       <span class="mi">20831</span><span class="p">,</span> <span class="mi">21131</span><span class="p">,</span> <span class="mi">21431</span><span class="p">,</span> <span class="mi">21731</span><span class="p">,</span> <span class="mi">22031</span><span class="p">])</span>
+<span class="c1"># Base state air density per vertical level above (kg/m3)</span>
+<span class="n">density</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>\
+       <span class="mf">1.164</span><span class="p">,</span> <span class="mf">1.159</span><span class="p">,</span> <span class="mf">1.154</span><span class="p">,</span> <span class="mf">1.149</span><span class="p">,</span> <span class="mf">1.143</span><span class="p">,</span> <span class="mf">1.138</span><span class="p">,</span> <span class="mf">1.132</span><span class="p">,</span> <span class="mf">1.126</span><span class="p">,</span> <span class="mf">1.120</span><span class="p">,</span> <span class="mf">1.113</span><span class="p">,</span>\
+       <span class="mf">1.106</span><span class="p">,</span> <span class="mf">1.098</span><span class="p">,</span> <span class="mf">1.090</span><span class="p">,</span> <span class="mf">1.081</span><span class="p">,</span> <span class="mf">1.071</span><span class="p">,</span> <span class="mf">1.062</span><span class="p">,</span> <span class="mf">1.052</span><span class="p">,</span> <span class="mf">1.041</span><span class="p">,</span> <span class="mf">1.030</span><span class="p">,</span> <span class="mf">1.019</span><span class="p">,</span>\
+       <span class="mf">1.007</span><span class="p">,</span> <span class="mf">0.995</span><span class="p">,</span> <span class="mf">0.982</span><span class="p">,</span> <span class="mf">0.968</span><span class="p">,</span> <span class="mf">0.954</span><span class="p">,</span> <span class="mf">0.940</span><span class="p">,</span> <span class="mf">0.924</span><span class="p">,</span> <span class="mf">0.909</span><span class="p">,</span> <span class="mf">0.892</span><span class="p">,</span> <span class="mf">0.875</span><span class="p">,</span>\
+       <span class="mf">0.857</span><span class="p">,</span> <span class="mf">0.840</span><span class="p">,</span> <span class="mf">0.821</span><span class="p">,</span> <span class="mf">0.803</span><span class="p">,</span> <span class="mf">0.784</span><span class="p">,</span> <span class="mf">0.764</span><span class="p">,</span> <span class="mf">0.744</span><span class="p">,</span> <span class="mf">0.723</span><span class="p">,</span> <span class="mf">0.701</span><span class="p">,</span> <span class="mf">0.678</span><span class="p">,</span>\
+       <span class="mf">0.657</span><span class="p">,</span> <span class="mf">0.636</span><span class="p">,</span> <span class="mf">0.616</span><span class="p">,</span> <span class="mf">0.597</span><span class="p">,</span> <span class="mf">0.579</span><span class="p">,</span> <span class="mf">0.561</span><span class="p">,</span> <span class="mf">0.544</span><span class="p">,</span> <span class="mf">0.527</span><span class="p">,</span> <span class="mf">0.510</span><span class="p">,</span> <span class="mf">0.494</span><span class="p">,</span>\
+       <span class="mf">0.478</span><span class="p">,</span> <span class="mf">0.463</span><span class="p">,</span> <span class="mf">0.448</span><span class="p">,</span> <span class="mf">0.434</span><span class="p">,</span> <span class="mf">0.420</span><span class="p">,</span> <span class="mf">0.407</span><span class="p">,</span> <span class="mf">0.393</span><span class="p">,</span> <span class="mf">0.380</span><span class="p">,</span> <span class="mf">0.367</span><span class="p">,</span> <span class="mf">0.355</span><span class="p">,</span>\
+       <span class="mf">0.343</span><span class="p">,</span> <span class="mf">0.331</span><span class="p">,</span> <span class="mf">0.319</span><span class="p">,</span> <span class="mf">0.307</span><span class="p">,</span> <span class="mf">0.296</span><span class="p">,</span> <span class="mf">0.285</span><span class="p">,</span> <span class="mf">0.273</span><span class="p">,</span> <span class="mf">0.262</span><span class="p">,</span> <span class="mf">0.251</span><span class="p">,</span> <span class="mf">0.240</span><span class="p">,</span>\
+       <span class="mf">0.229</span><span class="p">,</span> <span class="mf">0.219</span><span class="p">,</span> <span class="mf">0.209</span><span class="p">,</span> <span class="mf">0.200</span><span class="p">,</span> <span class="mf">0.191</span><span class="p">,</span> <span class="mf">0.182</span><span class="p">,</span> <span class="mf">0.173</span><span class="p">,</span> <span class="mf">0.165</span><span class="p">,</span> <span class="mf">0.157</span><span class="p">,</span> <span class="mf">0.148</span><span class="p">,</span>\
+       <span class="mf">0.141</span><span class="p">,</span> <span class="mf">0.134</span><span class="p">,</span> <span class="mf">0.127</span><span class="p">,</span> <span class="mf">0.120</span><span class="p">,</span> <span class="mf">0.114</span><span class="p">,</span> <span class="mf">0.108</span><span class="p">,</span> <span class="mf">0.102</span><span class="p">,</span> <span class="mf">0.097</span><span class="p">,</span> <span class="mf">0.092</span><span class="p">,</span> <span class="mf">0.088</span><span class="p">,</span>\
+       <span class="mf">0.083</span><span class="p">,</span> <span class="mf">0.079</span><span class="p">,</span> <span class="mf">0.075</span><span class="p">,</span> <span class="mf">0.071</span><span class="p">,</span> <span class="mf">0.067</span><span class="p">])</span>
+
+<span class="c1"># Compute density at each output level to plot based on base state density profile</span>
+<span class="n">altitude</span> <span class="o">=</span> <span class="n">altitude</span><span class="o">/</span><span class="mf">1000.</span>
+<span class="n">densfac</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">heights</span><span class="p">)),</span><span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">heights</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">altitude</span><span class="p">)):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">heights</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">altitude</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="ow">and</span> <span class="n">heights</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">altitude</span><span class="p">[</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="n">awt2</span> <span class="o">=</span> <span class="p">(</span><span class="n">heights</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">altitude</span><span class="p">[</span><span class="n">a</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">altitude</span><span class="p">[</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">altitude</span><span class="p">[</span><span class="n">a</span><span class="p">])</span> 
+            <span class="n">awt1</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">awt2</span>
+            <span class="n">densfac</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">awt1</span><span class="o">*</span><span class="n">density</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">+</span> <span class="n">awt2</span><span class="o">*</span><span class="n">density</span><span class="p">[</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+    <span class="c1">#print(f&#39;{i} {heights[i]:7.3f} {densfac[i]:7.3f}&#39;)</span>
+    
+<span class="c1"># Loop over aerosol profiles to plot</span>
+<span class="k">for</span> <span class="n">profiles_to_plot</span> <span class="ow">in</span> <span class="n">plotlist</span><span class="p">:</span>
+
+    <span class="c1"># Set some defaults</span>
+    <span class="n">num_modes</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">mode1_concen</span><span class="o">=</span><span class="mf">0.</span>
+    <span class="n">mode2_concen</span><span class="o">=</span><span class="mf">0.</span>
+    <span class="n">mode3_concen</span><span class="o">=</span><span class="mf">0.</span>
+
+    <span class="k">if</span> <span class="n">profiles_to_plot</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># Setup to plot idealized aerosol concentration vertical shape profiles</span>
+        <span class="n">num_modes</span><span class="o">=</span><span class="mi">1</span>
+        <span class="n">mode1_concen</span><span class="o">=</span><span class="mf">1.</span><span class="p">;</span>  <span class="n">median1R</span> <span class="o">=</span> <span class="s1">&#39;Idealized&#39;</span><span class="p">;</span> <span class="n">median1D</span> <span class="o">=</span> <span class="s1">&#39;Idealized&#39;</span>
+        <span class="n">fulltitle</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;1200-1400 LT Aug 7, 2022</span><span class="se">\n</span><span class="s1">Normalized Vertical Profile&#39;</span>
+        <span class="n">figname</span> <span class="o">=</span> <span class="s1">&#39;Shape-Profile-Aug7&#39;</span>
+        
+    <span class="k">elif</span> <span class="n">profiles_to_plot</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="c1"># June 17, 2022 - before convection near Houston (12:00-14:00 LT)</span>
+        <span class="n">num_modes</span><span class="o">=</span><span class="mi">2</span>
+        <span class="n">mode1_concen</span><span class="o">=</span><span class="mf">3443.</span><span class="p">;</span>  <span class="n">median1R</span> <span class="o">=</span> <span class="s1">&#39;15 nm&#39;</span><span class="p">;</span> <span class="n">median1D</span> <span class="o">=</span>  <span class="s1">&#39;30 nm&#39;</span> <span class="c1">#r = 15.0nm = 0.0150um</span>
+        <span class="n">mode2_concen</span><span class="o">=</span><span class="mf">531.</span><span class="p">;</span>   <span class="n">median2R</span> <span class="o">=</span> <span class="s1">&#39;68 nm&#39;</span><span class="p">;</span> <span class="n">median2D</span> <span class="o">=</span> <span class="s1">&#39;136 nm&#39;</span> <span class="c1">#r = 68.0nm = 0.0680um</span>
+        <span class="n">fulltitle</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;17 June 2022 - Aerosol Profiles </span><span class="se">\n</span><span class="s1"> Houston Pre-Convection 12-14 LT&#39;</span>
+        <span class="n">figname</span> <span class="o">=</span> <span class="s1">&#39;Jun17-PreConvection&#39;</span>
+
+    <span class="k">elif</span> <span class="n">profiles_to_plot</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="c1"># August 7, 2022 - before convection near Houston (11:00-12:00 LT)</span>
+        <span class="n">num_modes</span><span class="o">=</span><span class="mi">2</span>
+        <span class="n">mode1_concen</span><span class="o">=</span><span class="mf">1425.</span><span class="p">;</span>  <span class="n">median1R</span> <span class="o">=</span> <span class="s1">&#39;24.5 nm&#39;</span><span class="p">;</span> <span class="n">median1D</span> <span class="o">=</span>  <span class="s1">&#39;49 nm&#39;</span> <span class="c1">#r = 24.5nm = 0.0245um</span>
+        <span class="n">mode2_concen</span><span class="o">=</span><span class="mf">263.</span><span class="p">;</span>   <span class="n">median2R</span> <span class="o">=</span> <span class="s1">&#39;87.5 nm&#39;</span><span class="p">;</span> <span class="n">median2D</span> <span class="o">=</span> <span class="s1">&#39;175 nm&#39;</span> <span class="c1">#r = 87.5nm = 0.0875um</span>
+        <span class="n">fulltitle</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;7 Aug 2022 - Aerosol Profiles </span><span class="se">\n</span><span class="s1"> Houston Pre-Convection 11-12 LT&#39;</span>
+        <span class="n">figname</span> <span class="o">=</span> <span class="s1">&#39;Aug07-PreConvection&#39;</span>
+
+    <span class="c1"># Convert (#/cm3) ambient concentration to (#/mg) assuming air density of first</span>
+    <span class="c1"># level above ground from input above. Model uses #/mg mixing ratio concentration.</span>
+    <span class="k">if</span> <span class="n">profiles_to_plot</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">mode1_concen</span> <span class="o">=</span> <span class="n">mode1_concen</span> <span class="o">/</span> <span class="n">density</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">mode2_concen</span> <span class="o">=</span> <span class="n">mode2_concen</span> <span class="o">/</span> <span class="n">density</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">mode3_concen</span> <span class="o">=</span> <span class="n">mode3_concen</span> <span class="o">/</span> <span class="n">density</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    
+    <span class="c1"># Set some label and axis info based on what is computed</span>
+    <span class="k">if</span> <span class="n">profiles_to_plot</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">plotlabel</span><span class="o">=</span><span class="s1">&#39;Normalized Aerosol Concentration&#39;</span>
+    <span class="k">elif</span> <span class="n">profiles_to_plot</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">plotlabel</span><span class="o">=</span><span class="s1">&#39;Aerosol Number Concentration ($mg^{-1}$)&#39;</span>
+    
+    <span class="c1"># Set up profile and plot if we have the data</span>
+    <span class="k">if</span> <span class="n">num_modes</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+
+        <span class="c1"># Compute total aerosol number and get relative number fractions of each mode</span>
+        <span class="n">totaerosol</span> <span class="o">=</span> <span class="n">mode1_concen</span> <span class="o">+</span> <span class="n">mode2_concen</span> <span class="o">+</span> <span class="n">mode3_concen</span>
+        <span class="n">m1_frac</span> <span class="o">=</span> <span class="n">mode1_concen</span> <span class="o">/</span> <span class="n">totaerosol</span>
+        <span class="n">m2_frac</span> <span class="o">=</span> <span class="n">mode2_concen</span> <span class="o">/</span> <span class="n">totaerosol</span>
+        <span class="n">m3_frac</span> <span class="o">=</span> <span class="n">mode3_concen</span> <span class="o">/</span> <span class="n">totaerosol</span>
+
+        <span class="c1"># Profile shape function from Bo Chen (Texas A&amp;M).</span>
+        <span class="c1"># All parameters are equal or larger than 0.0.</span>
+        <span class="c1"># This profile shape is associated with aerosol data on Aug 7, 2022</span>
+        <span class="c1"># at the ARM AMF1 Laporte site from 1715-1745 UTC. </span>
+        <span class="n">x0</span><span class="o">=</span><span class="mf">4.85856762</span> <span class="c1"># a parameter for the exponential function</span>
+        <span class="n">gam</span><span class="o">=</span><span class="mf">0.75814697</span> <span class="c1"># a parameter for the exponential function</span>
+        <span class="n">xerf</span><span class="o">=</span><span class="mf">1.40855631</span>
+        <span class="n">rm</span><span class="o">=</span><span class="mf">1.94524093</span> <span class="c1"># boundary layer height</span>
+        <span class="n">s</span><span class="o">=</span><span class="mf">0.51943654</span> <span class="c1"># linked to thickness of entrainment zone</span>
+        <span class="n">xc</span><span class="o">=</span><span class="mf">1.44155834</span>
+        <span class="n">profile_aug7</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">heights</span><span class="p">)),</span><span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span>
+        <span class="n">xferi</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">heights</span><span class="p">)):</span>
+            <span class="n">profile_aug7</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">x0</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">gam</span><span class="o">*</span><span class="n">heights</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span><span class="o">-</span><span class="p">(</span><span class="n">xerf</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">erf</span><span class="p">((</span><span class="n">heights</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">rm</span><span class="p">)</span><span class="o">/</span><span class="n">s</span><span class="p">))</span><span class="o">+</span><span class="n">xc</span>
+            <span class="k">if</span> <span class="n">heights</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">6.0</span><span class="p">:</span> <span class="c1"># For altitudes &gt; 6 km AGL</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">xferi</span><span class="o">==</span><span class="mi">0</span><span class="p">):</span><span class="n">xferi</span><span class="o">=</span><span class="n">i</span>
+                <span class="n">profile_aug7</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">profile_aug7</span><span class="p">[</span><span class="n">xferi</span><span class="p">]</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">heights</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="mf">10.0</span><span class="p">)</span>
+            <span class="c1">#print(f&#39;General Aerosol Profile (#/cm3): {heights[i]:6.3f}  {profile_aug7[i]:7.2f}&#39;)</span>
+        <span class="n">maxvalueinprofile</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">profile_aug7</span><span class="p">)</span>
+        <span class="c1"># Shape profile scaled from 0 -&gt; 1 via max normalized backscatter</span>
+        <span class="n">profile_aug7</span><span class="o">=</span><span class="n">profile_aug7</span><span class="o">/</span><span class="n">maxvalueinprofile</span>
+
+        <span class="c1"># Set the profiles relative to the total aerosol surface concentration</span>
+        <span class="n">profile1</span> <span class="o">=</span> <span class="n">profile_aug7</span> <span class="o">*</span> <span class="n">mode1_concen</span>
+        <span class="n">profile2</span> <span class="o">=</span> <span class="n">profile_aug7</span> <span class="o">*</span> <span class="n">mode2_concen</span>
+        <span class="n">profile3</span> <span class="o">=</span> <span class="n">profile_aug7</span> <span class="o">*</span> <span class="n">mode3_concen</span>
+
+        <span class="c1"># Compute the relative concenration ratios among aerosol modes</span>
+        <span class="n">totalmaxt</span> <span class="o">=</span> <span class="n">mode1_concen</span> <span class="o">+</span> <span class="n">mode2_concen</span> <span class="o">+</span> <span class="n">mode3_concen</span>
+        <span class="n">aerorat1</span> <span class="o">=</span> <span class="n">mode1_concen</span> <span class="o">/</span> <span class="n">totalmaxt</span>
+        <span class="n">aerorat2</span> <span class="o">=</span> <span class="n">mode2_concen</span> <span class="o">/</span> <span class="n">totalmaxt</span>
+        <span class="n">aerorat3</span> <span class="o">=</span> <span class="n">mode3_concen</span> <span class="o">/</span> <span class="n">totalmaxt</span>
+
+        <span class="c1"># Constrain upper level concentrations to a minimum / maximum of X/mg-air using</span>
+        <span class="c1"># ratios of the separate modes.</span>
+        <span class="k">if</span> <span class="n">profiles_to_plot</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">heights</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">profile1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">aerorat1</span> <span class="o">*</span> <span class="n">min_aero</span><span class="p">:</span> <span class="n">profile1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">aerorat1</span> <span class="o">*</span> <span class="n">min_aero</span>
+                <span class="k">if</span> <span class="n">profile2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">aerorat2</span> <span class="o">*</span> <span class="n">min_aero</span><span class="p">:</span> <span class="n">profile2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">aerorat2</span> <span class="o">*</span> <span class="n">min_aero</span>
+                <span class="k">if</span> <span class="n">profile3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">aerorat3</span> <span class="o">*</span> <span class="n">min_aero</span><span class="p">:</span> <span class="n">profile3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">aerorat3</span> <span class="o">*</span> <span class="n">min_aero</span>
+                <span class="k">if</span> <span class="n">heights</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">6.0</span><span class="p">:</span> 
+                    <span class="n">profile1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">aerorat1</span> <span class="o">*</span> <span class="n">min_aero</span>
+                    <span class="n">profile2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">aerorat2</span> <span class="o">*</span> <span class="n">min_aero</span>
+                    <span class="n">profile3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">aerorat3</span> <span class="o">*</span> <span class="n">min_aero</span>
+
+        <span class="n">profiletotal</span><span class="o">=</span><span class="n">profile1</span><span class="o">+</span><span class="n">profile2</span><span class="o">+</span><span class="n">profile3</span>
+
+        <span class="c1"># Print some output data to a table to view</span>
+        <span class="k">if</span> <span class="n">print_profile</span> <span class="ow">and</span> <span class="n">profiles_to_plot</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">fulltitle</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;                 Height     Mode-1     Mode-2    Mode-3      Total&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;                   km         #/mg       #/mg      #/mg       #/mg&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">heights</span><span class="p">)):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Aerosol Profile: </span><span class="si">{</span><span class="n">heights</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">6.3f</span><span class="si">}</span><span class="s1">  </span><span class="si">{</span><span class="n">profile1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">9.1f</span><span class="si">}</span><span class="s1">  </span><span class="si">{</span><span class="n">profile2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">9.1f</span><span class="si">}</span><span class="s1">&#39;</span>\
+                     <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">profile3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">9.1f</span><span class="si">}</span><span class="s1">  </span><span class="si">{</span><span class="n">profiletotal</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">9.1f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="c1">###########################################################################################</span>
+        <span class="c1"># Set up the figure and axes</span>
+        <span class="n">maxvalueinprofile</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="n">mode1_concen</span><span class="p">,</span><span class="n">mode2_concen</span><span class="p">,</span><span class="n">mode3_concen</span><span class="p">)</span>
+        <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">ncols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">plotlabel</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">font_axestitle</span><span class="p">,</span><span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Altitude (km)&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">font_axestitle</span><span class="p">,</span><span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">ymin</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_ticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">max_hgt_plot</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">xmin</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span><span class="n">xmax</span><span class="o">=</span><span class="n">maxvalueinprofile</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">mode1_concen</span> <span class="o">&gt;</span> <span class="mf">0.0</span><span class="p">:</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">profile1</span><span class="p">,</span><span class="n">heights</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>\
+                    <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Mode-1 MedianDiam=</span><span class="si">{</span><span class="n">median1D</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">mode2_concen</span> <span class="o">&gt;</span> <span class="mf">0.0</span><span class="p">:</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">profile2</span><span class="p">,</span><span class="n">heights</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>\
+                    <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Mode-2 MedianDiam=</span><span class="si">{</span><span class="n">median2D</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">mode3_concen</span> <span class="o">&gt;</span> <span class="mf">0.0</span><span class="p">:</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">profile3</span><span class="p">,</span><span class="n">heights</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>\
+                    <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Mode-3 MedianDiam=</span><span class="si">{</span><span class="n">median3D</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">fulltitle</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">font_title</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Set up the legend and annotations</span>
+        <span class="k">if</span> <span class="n">profiles_to_plot</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">legend_properties</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;weight&#39;</span><span class="p">:</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span><span class="s1">&#39;size&#39;</span>   <span class="p">:</span> <span class="mi">14</span><span class="p">}</span>
+            <span class="n">leg</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.15</span><span class="p">,</span><span class="mf">0.86</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mf">0.102</span><span class="p">),</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">ncol</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>\
+                                    <span class="n">prop</span><span class="o">=</span><span class="n">legend_properties</span><span class="p">,</span><span class="n">handlelength</span><span class="o">=</span><span class="mf">3.0</span><span class="p">)</span>
+            <span class="n">leg</span><span class="o">.</span><span class="n">get_frame</span><span class="p">()</span><span class="o">.</span><span class="n">set_edgecolor</span><span class="p">(</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+            <span class="n">leg</span><span class="o">.</span><span class="n">get_frame</span><span class="p">()</span><span class="o">.</span><span class="n">set_linewidth</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">leg</span><span class="o">.</span><span class="n">get_lines</span><span class="p">():</span>
+                <span class="n">line</span><span class="o">.</span><span class="n">set_linewidth</span><span class="p">(</span><span class="mf">4.0</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.35</span><span class="p">,</span><span class="mf">0.77</span><span class="p">,</span><span class="sa">f</span><span class="s1">&#39;Total Surface # = </span><span class="si">{</span><span class="n">totalmaxt</span><span class="si">:</span><span class="s1">6.0f</span><span class="si">}</span><span class="s1">/mg&#39;</span><span class="p">,</span><span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
+                    <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+
+        <span class="c1"># Set background layout and color</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+        <span class="n">fig</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">&#39;white&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Save the plots to a file</span>
+        <span class="n">plotn</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;/Users/smsaleeb/Downloads/PythonScripts/Plt.AeroProfiles-</span><span class="si">{</span><span class="n">figname</span><span class="si">}</span><span class="s1">.png&#39;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">plotn</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">plot_to_file</span><span class="p">:</span>
+            <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">plotn</span><span class="p">,</span><span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span><span class="n">pad_inches</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span><span class="n">dpi</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;**********************************************************************************&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/smsaleeb/Downloads/PythonScripts/Plt.AeroProfiles-Shape-Profile-Aug7.png
+</pre></div>
+</div>
+<img alt="_images/af1c62341a68bb16d3b69986fca44bf20b8c54859292924d2862d160fdd41dfb.png" src="_images/af1c62341a68bb16d3b69986fca44bf20b8c54859292924d2862d160fdd41dfb.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>**********************************************************************************
+
+17 June 2022 - Aerosol Profiles 
+ Houston Pre-Convection 12-14 LT
+                 Height     Mode-1     Mode-2    Mode-3      Total
+                   km         #/mg       #/mg      #/mg       #/mg
+Aerosol Profile:  0.000     2970.7      458.2       0.0     3428.8
+Aerosol Profile:  0.338     2546.9      392.8       0.0     2939.7
+Aerosol Profile:  0.677     2218.8      342.2       0.0     2561.0
+Aerosol Profile:  1.015     1959.3      302.2       0.0     2261.4
+Aerosol Profile:  1.354     1710.9      263.9       0.0     1974.8
+Aerosol Profile:  1.692     1350.8      208.3       0.0     1559.1
+Aerosol Profile:  2.031      857.1      132.2       0.0      989.3
+Aerosol Profile:  2.369      458.2       70.7       0.0      528.9
+Aerosol Profile:  2.708      273.6       42.2       0.0      315.9
+Aerosol Profile:  3.046      200.2       30.9       0.0      231.0
+Aerosol Profile:  3.385      156.6       24.2       0.0      180.8
+Aerosol Profile:  3.723      124.0       19.1       0.0      143.2
+Aerosol Profile:  4.062       98.8       15.2       0.0      114.1
+Aerosol Profile:  4.400       79.3       12.2       0.0       91.6
+Aerosol Profile:  4.738       64.3        9.9       0.0       74.2
+Aerosol Profile:  5.077       52.6        8.1       0.0       60.7
+Aerosol Profile:  5.415       43.6        6.7       0.0       50.3
+Aerosol Profile:  5.754       43.3        6.7       0.0       50.0
+Aerosol Profile:  6.092       43.3        6.7       0.0       50.0
+Aerosol Profile:  6.431       43.3        6.7       0.0       50.0
+Aerosol Profile:  6.769       43.3        6.7       0.0       50.0
+Aerosol Profile:  7.108       43.3        6.7       0.0       50.0
+Aerosol Profile:  7.446       43.3        6.7       0.0       50.0
+Aerosol Profile:  7.785       43.3        6.7       0.0       50.0
+Aerosol Profile:  8.123       43.3        6.7       0.0       50.0
+Aerosol Profile:  8.462       43.3        6.7       0.0       50.0
+Aerosol Profile:  8.800       43.3        6.7       0.0       50.0
+Aerosol Profile:  9.138       43.3        6.7       0.0       50.0
+Aerosol Profile:  9.477       43.3        6.7       0.0       50.0
+Aerosol Profile:  9.815       43.3        6.7       0.0       50.0
+Aerosol Profile: 10.154       43.3        6.7       0.0       50.0
+Aerosol Profile: 10.492       43.3        6.7       0.0       50.0
+Aerosol Profile: 10.831       43.3        6.7       0.0       50.0
+Aerosol Profile: 11.169       43.3        6.7       0.0       50.0
+Aerosol Profile: 11.508       43.3        6.7       0.0       50.0
+Aerosol Profile: 11.846       43.3        6.7       0.0       50.0
+Aerosol Profile: 12.185       43.3        6.7       0.0       50.0
+Aerosol Profile: 12.523       43.3        6.7       0.0       50.0
+Aerosol Profile: 12.862       43.3        6.7       0.0       50.0
+Aerosol Profile: 13.200       43.3        6.7       0.0       50.0
+Aerosol Profile: 13.538       43.3        6.7       0.0       50.0
+Aerosol Profile: 13.877       43.3        6.7       0.0       50.0
+Aerosol Profile: 14.215       43.3        6.7       0.0       50.0
+Aerosol Profile: 14.554       43.3        6.7       0.0       50.0
+Aerosol Profile: 14.892       43.3        6.7       0.0       50.0
+Aerosol Profile: 15.231       43.3        6.7       0.0       50.0
+Aerosol Profile: 15.569       43.3        6.7       0.0       50.0
+Aerosol Profile: 15.908       43.3        6.7       0.0       50.0
+Aerosol Profile: 16.246       43.3        6.7       0.0       50.0
+Aerosol Profile: 16.585       43.3        6.7       0.0       50.0
+Aerosol Profile: 16.923       43.3        6.7       0.0       50.0
+Aerosol Profile: 17.262       43.3        6.7       0.0       50.0
+Aerosol Profile: 17.600       43.3        6.7       0.0       50.0
+Aerosol Profile: 17.938       43.3        6.7       0.0       50.0
+Aerosol Profile: 18.277       43.3        6.7       0.0       50.0
+Aerosol Profile: 18.615       43.3        6.7       0.0       50.0
+Aerosol Profile: 18.954       43.3        6.7       0.0       50.0
+Aerosol Profile: 19.292       43.3        6.7       0.0       50.0
+Aerosol Profile: 19.631       43.3        6.7       0.0       50.0
+Aerosol Profile: 19.969       43.3        6.7       0.0       50.0
+Aerosol Profile: 20.308       43.3        6.7       0.0       50.0
+Aerosol Profile: 20.646       43.3        6.7       0.0       50.0
+Aerosol Profile: 20.985       43.3        6.7       0.0       50.0
+Aerosol Profile: 21.323       43.3        6.7       0.0       50.0
+Aerosol Profile: 21.662       43.3        6.7       0.0       50.0
+Aerosol Profile: 22.000       43.3        6.7       0.0       50.0
+/Users/smsaleeb/Downloads/PythonScripts/Plt.AeroProfiles-Jun17-PreConvection.png
+</pre></div>
+</div>
+<img alt="_images/afed31fa485c99cc8606c80dafa5144c095191b4d3a2aea5ebe87f9de670a2fa.png" src="_images/afed31fa485c99cc8606c80dafa5144c095191b4d3a2aea5ebe87f9de670a2fa.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>**********************************************************************************
+
+7 Aug 2022 - Aerosol Profiles 
+ Houston Pre-Convection 11-12 LT
+                 Height     Mode-1     Mode-2    Mode-3      Total
+                   km         #/mg       #/mg      #/mg       #/mg
+Aerosol Profile:  0.000     1229.5      226.9       0.0     1456.4
+Aerosol Profile:  0.338     1054.1      194.5       0.0     1248.7
+Aerosol Profile:  0.677      918.3      169.5       0.0     1087.8
+Aerosol Profile:  1.015      810.9      149.7       0.0      960.6
+Aerosol Profile:  1.354      708.1      130.7       0.0      838.8
+Aerosol Profile:  1.692      559.1      103.2       0.0      662.3
+Aerosol Profile:  2.031      354.7       65.5       0.0      420.2
+Aerosol Profile:  2.369      189.6       35.0       0.0      224.6
+Aerosol Profile:  2.708      113.3       20.9       0.0      134.2
+Aerosol Profile:  3.046       82.8       15.3       0.0       98.1
+Aerosol Profile:  3.385       64.8       12.0       0.0       76.8
+Aerosol Profile:  3.723       51.3        9.5       0.0       60.8
+Aerosol Profile:  4.062       42.2        7.8       0.0       50.0
+Aerosol Profile:  4.400       42.2        7.8       0.0       50.0
+Aerosol Profile:  4.738       42.2        7.8       0.0       50.0
+Aerosol Profile:  5.077       42.2        7.8       0.0       50.0
+Aerosol Profile:  5.415       42.2        7.8       0.0       50.0
+Aerosol Profile:  5.754       42.2        7.8       0.0       50.0
+Aerosol Profile:  6.092       42.2        7.8       0.0       50.0
+Aerosol Profile:  6.431       42.2        7.8       0.0       50.0
+Aerosol Profile:  6.769       42.2        7.8       0.0       50.0
+Aerosol Profile:  7.108       42.2        7.8       0.0       50.0
+Aerosol Profile:  7.446       42.2        7.8       0.0       50.0
+Aerosol Profile:  7.785       42.2        7.8       0.0       50.0
+Aerosol Profile:  8.123       42.2        7.8       0.0       50.0
+Aerosol Profile:  8.462       42.2        7.8       0.0       50.0
+Aerosol Profile:  8.800       42.2        7.8       0.0       50.0
+Aerosol Profile:  9.138       42.2        7.8       0.0       50.0
+Aerosol Profile:  9.477       42.2        7.8       0.0       50.0
+Aerosol Profile:  9.815       42.2        7.8       0.0       50.0
+Aerosol Profile: 10.154       42.2        7.8       0.0       50.0
+Aerosol Profile: 10.492       42.2        7.8       0.0       50.0
+Aerosol Profile: 10.831       42.2        7.8       0.0       50.0
+Aerosol Profile: 11.169       42.2        7.8       0.0       50.0
+Aerosol Profile: 11.508       42.2        7.8       0.0       50.0
+Aerosol Profile: 11.846       42.2        7.8       0.0       50.0
+Aerosol Profile: 12.185       42.2        7.8       0.0       50.0
+Aerosol Profile: 12.523       42.2        7.8       0.0       50.0
+Aerosol Profile: 12.862       42.2        7.8       0.0       50.0
+Aerosol Profile: 13.200       42.2        7.8       0.0       50.0
+Aerosol Profile: 13.538       42.2        7.8       0.0       50.0
+Aerosol Profile: 13.877       42.2        7.8       0.0       50.0
+Aerosol Profile: 14.215       42.2        7.8       0.0       50.0
+Aerosol Profile: 14.554       42.2        7.8       0.0       50.0
+Aerosol Profile: 14.892       42.2        7.8       0.0       50.0
+Aerosol Profile: 15.231       42.2        7.8       0.0       50.0
+Aerosol Profile: 15.569       42.2        7.8       0.0       50.0
+Aerosol Profile: 15.908       42.2        7.8       0.0       50.0
+Aerosol Profile: 16.246       42.2        7.8       0.0       50.0
+Aerosol Profile: 16.585       42.2        7.8       0.0       50.0
+Aerosol Profile: 16.923       42.2        7.8       0.0       50.0
+Aerosol Profile: 17.262       42.2        7.8       0.0       50.0
+Aerosol Profile: 17.600       42.2        7.8       0.0       50.0
+Aerosol Profile: 17.938       42.2        7.8       0.0       50.0
+Aerosol Profile: 18.277       42.2        7.8       0.0       50.0
+Aerosol Profile: 18.615       42.2        7.8       0.0       50.0
+Aerosol Profile: 18.954       42.2        7.8       0.0       50.0
+Aerosol Profile: 19.292       42.2        7.8       0.0       50.0
+Aerosol Profile: 19.631       42.2        7.8       0.0       50.0
+Aerosol Profile: 19.969       42.2        7.8       0.0       50.0
+Aerosol Profile: 20.308       42.2        7.8       0.0       50.0
+Aerosol Profile: 20.646       42.2        7.8       0.0       50.0
+Aerosol Profile: 20.985       42.2        7.8       0.0       50.0
+Aerosol Profile: 21.323       42.2        7.8       0.0       50.0
+Aerosol Profile: 21.662       42.2        7.8       0.0       50.0
+Aerosol Profile: 22.000       42.2        7.8       0.0       50.0
+/Users/smsaleeb/Downloads/PythonScripts/Plt.AeroProfiles-Aug07-PreConvection.png
+</pre></div>
+</div>
+<img alt="_images/d71f1a454767d4cc0ddd8a70b0f8d84c9d8221a2ff32b0f0c63026e61acb6252.png" src="_images/d71f1a454767d4cc0ddd8a70b0f8d84c9d8221a2ff32b0f0c63026e61acb6252.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>**********************************************************************************
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By ARM Development Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
