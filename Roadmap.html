@@ -589,7 +589,43 @@ document.write(`
 <section id="aerosol-initialization">
 <h2>8. Aerosol Initialization<a class="headerlink" href="#aerosol-initialization" title="Link to this heading">#</a></h2>
 <p>The aerosol initial conditions for each case have been constructed via a combination of (1) the surface aerosol particle size distributions from the SMPS at the TRACER AMF1 site in LaPorte, TX (courtesy of Tamanna Subba and Chongai Kuang from BNL) and (2) the aerosol vertical shape profile derived from coincident micropulse lidar and radiosonde data that are used to compute the cloud-free aerosol backscatter coefficient profile (courtesy of Bo Chen, Anita Rapp, &amp; Sarah Brooks from Texas A&amp;M Univ). For details, please refer to Chen et al. (2024). The 2-mode aerosol size distribution is shown in Table 3 and Figure 4 with an ultrafine aerosol mode peaking at 30 nm (June 17) and 50 nm (Aug. 7) in diameter, and an accumulation mode peaking at 135 nm (June 17) and 175 nm (Aug. 7). Aerosol mode characteristics for each case are shown in Appendices A &amp; B and summarized in Table 3.</p>
-<p>&lt;&lt;&lt;&lt;&lt; Table-3</p>
+<p><strong>Table 3: The 2-mode aerosol size distribution specification</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>June 17, 2022</p></th>
+<th class="head"><p>Mode-1</p></th>
+<th class="head"><p>Mode-2</p></th>
+<th class="head"><p>Aug 7, 2022</p></th>
+<th class="head"><p>Mode-1</p></th>
+<th class="head"><p>Mode-2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Aerosol Number <br> (ρsfc ~ 1.159 kg m-3)</p></td>
+<td><p>3443 cm-3 <br> (2970 mg-1)</p></td>
+<td><p>531 cm-3 <br> (458 mg-1)</p></td>
+<td><p>Aerosol Number <br> (ρsfc ~ 1.159 kg m-3)</p></td>
+<td><p>1425 cm-3 <br> (1229 mg-1)</p></td>
+<td><p>263 cm-3 <br> (226 mg-1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Median Diameter</p></td>
+<td><p>30 nm</p></td>
+<td><p>136 nm</p></td>
+<td><p>Median Diameter</p></td>
+<td><p>49 nm</p></td>
+<td><p>175 nm</p></td>
+</tr>
+<tr class="row-even"><td><p>Mode Sigma</p></td>
+<td><p>1.5</p></td>
+<td><p>1.5</p></td>
+<td><p>Mode Sigma</p></td>
+<td><p>1.8</p></td>
+<td><p>1.4</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
 <p>The aerosol number concentrations were originally provided in volume units of cm<sup>-3</sup>. To apply this to models that carry aerosols in number and mass units of kg<sup>-1</sup> and kg kg<sup>-1</sup>, we convert the volume units to mixing ratio units using a representative surface air density (1.159 kg m<sup>-3</sup>) near the AMF1 site.</p>
 <p>The left panel of Figure 4, below, shows the idealized vertical profile of normalized aerosol concentration derived from the Chen et al. (2024) methodology above using the TRACER observations from 1200-1400 LT on 7 Aug 2022 (data for this type of analysis were not available on 17 June, so we use this profile as being reasonably representative of the Houston area during the IOP). The middle and right panels display the respective applied profiles to be used in the control simulations for the two aerosol modes identified from the pre-convective time periods on 17 June and 7 August.</p>
 <p><img alt="TRACER MIP Figure 4" src="_images/TRACER_MIP_Fig04.jpeg" />
