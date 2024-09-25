@@ -395,7 +395,7 @@ document.write(`
 <p><img alt="TRACER MIP Figure 1" src="_images/TRACER_MIP_Fig01.jpeg" />
 <em><strong>Figure 1. The soundings (left), Stage IV precipitation (middle), and the pre-convective aerosol size distribution (right) measured at the TRACER main site by SMPS for the June 17 case.</strong></em></p>
 <p>The June 17 case has widespread convection, featured with an afternoon sea breeze induced thunderstorm in the Houston area (Figure 1) with a high aerosol condition (~ 4000 cm<sup>-3</sup>; &gt; 10 nm). This case has aircraft measurements from the co-current NSF ESCAPE field campaign. The August 7 case has a morning sea breeze front and a thunderstorm in the early afternoon in the Houston area with relatively cleaner aerosol conditions (~1700 cm<sup>-3</sup>; &gt; 10 nm).</p>
-<p><img alt="TRACER MIP Figure 2" src="figures/TRACER_MIP_Fig2.jpeg" />
+<p><img alt="TRACER MIP Figure 2" src="_images/TRACER_MIP_Fig02.jpeg" />
 <em><strong>Figure 2: The soundings (left), Stage IV precipitation (middle), and the pre-convection aerosol size distribution (right) measured at the TRACER main site by SMPS for the August 17 case.</strong></em></p>
 <p>A <a class="reference external" href="https://github.com/ARM-Synergy/tracer-mip">TRACER-MIP GitHub page</a> has been established for sharing this roadmap document as well as other documentation and updates, analysis codes, model &amp; parameterization descriptions, etc.</p>
 </section>
@@ -412,7 +412,8 @@ document.write(`
 <section id="model-setup">
 <h2>5. Model Setup<a class="headerlink" href="#model-setup" title="Link to this heading">#</a></h2>
 <p>We ask all participants to use the following model configuration given in the table below. The nested grid domains are shown below in Figure 3. The inner domain Grid-2 is the same as the innermost nest from the ACPC-MIP. Table 1 presents model setup details. For each of the aerosol sensitivity simulations discussed below, to avoid the complications from size distribution change, we ask to keep the shape of the aerosol size distributions identical. We will solely change the initial aerosol number concentration vertical profiles by multiplying the observed surface number concentration by the coefficients (3x and ⅓ x) and generating the associated initialization vertical profiles for the sensitivity simulations. This means we are exploring the effect of aerosol number changes on clouds only. We also ask that all participants provide a file that contains a description of their model, descriptions of the parameterizations (i.e., microphysics, turbulence, land surface, etc.) used with associated references, and an overview of the output variable names and units. The table of requested output variables and units is provided in Table 2 . Please conform to this request of variables and units as much as possible.</p>
-<p>&lt;&lt;&lt;&lt;&lt; Fig-3</p>
+<p><img alt="TRACER MIP Figure 3" src="_images/TRACER_MIP_Fig03.jpeg" /></p>
+<p><em><strong>Figure 3: Simulation 2-grid nested domains centered over the NEXRAD radar site near Houston, Texas.</strong></em></p>
 <p>&lt;&lt;&lt;&lt;&lt; Table-1</p>
 </section>
 <section id="output-of-model-variables">
@@ -431,7 +432,8 @@ document.write(`
 <p>&lt;&lt;&lt;&lt;&lt; Table-3</p>
 <p>The aerosol number concentrations were originally provided in volume units of cm<sup>-3</sup>. To apply this to models that carry aerosols in number and mass units of kg<sup>-1</sup> and kg kg<sup>-1</sup>, we convert the volume units to mixing ratio units using a representative surface air density (1.159 kg m<sup>-3</sup>) near the AMF1 site.</p>
 <p>The left panel of Figure 4, below, shows the idealized vertical profile of normalized aerosol concentration derived from the Chen et al. (2024) methodology above using the TRACER observations from 1200-1400 LT on 7 Aug 2022 (data for this type of analysis were not available on 17 June, so we use this profile as being reasonably representative of the Houston area during the IOP). The middle and right panels display the respective applied profiles to be used in the control simulations for the two aerosol modes identified from the pre-convective time periods on 17 June and 7 August.</p>
-<p>&lt;&lt;&lt;&lt;&lt; Fig-4</p>
+<p><img alt="TRACER MIP Figure 4" src="_images/TRACER_MIP_Fig04.jpeg" />
+<em><strong>Figure 4: The derived aerosol concentration (# mg-1) vertical profiles of two fitted aerosol modes from AMF1 observations taken during the pre-convective periods on 17 June (left) and 7 August (right), respectively.</strong></em></p>
 <p>The shape profile in the left panel above is represented by the following function fit to the dry aerosol backscatter (and then scaled from 0 to 1):</p>
 <p>&lt;&lt;&lt;&lt;&lt; Equation-1</p>
 <p>The aerosol surface concentrations in # mg<sup>-1</sup> were then applied to the idealized vertical shape profile (Figure 4, left) to arrive at the case study control simulation shape profiles in Figure 4 (center, right). The vertical profiles apply an additional constraint such that the total (mode-1 + mode-2) number concentration does not drop below 50 mg<sup>-1</sup> at any altitude and scales with the surface aerosol number concentrations. Details of this application can be found in the Jupyter notebook linked below.</p>
@@ -439,7 +441,8 @@ document.write(`
 <p>Initialization of aerosol vertical profiles for the <strong>3 x higher</strong> and <strong>3 x lower</strong> sensitivity simulations simply requires <strong>3 x</strong> or <strong>⅓ x</strong> of the provided surface aerosol concentrations (# cm<sup>-3</sup>) of each mode, conversion to mixing ratio units based on provided air density (# mg<sup>-1</sup>), and then re-creation of the vertical profiles based on those updated numbers.</p>
 <p>If your model can represent the aerosol distribution <strong>mode sigma</strong>, please use the sigma values provided in the table; otherwise use your model’s default values.</p>
 <p>For models that can represent <strong>aerosol hygroscopicity</strong>, we are using a single and constant bulk <strong>kappa value of 0.26</strong> (Figure 5) which corresponds to the full TRACER campaign 50th percentile value of the bulk kappa derived from the AMF1 Aerosol Observing System (AOS) at LaPorte, TX (courtesy of Maria Zawadowicz, BNL).</p>
-<p>&lt;&lt;&lt;&lt;&lt; Fig-5</p>
+<p><img alt="TRACER MIP Figure 5" src="_images/TRACER_MIP_Fig05.jpeg" />
+<em><strong>Figure 5: Full TRACER time series of diagnosed aerosol bulk kappa values from the integrated analysis of the AMF1 AOS at LaPorte, TX. This was derived primarily from the measurements of bulk aerosol composition (and HT-DMA for validation). The campaign 50th percentile value of k=0.26 will be used for the MIP models that factor in aerosol bulk hygroscopicity. Kappa data analysis provided by Maria Zawadowicz from BNL.</strong></em></p>
 </section>
 <section id="appendix-a-additional-summary-of-june-17-2022-case-study-event">
 <h2>Appendix A: Additional summary of June 17, 2022 case study event<a class="headerlink" href="#appendix-a-additional-summary-of-june-17-2022-case-study-event" title="Link to this heading">#</a></h2>
