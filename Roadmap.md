@@ -59,6 +59,70 @@ We ask all participants to use the following model configuration given in the ta
 <<<<< Table-1
 
 
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+| Model Configuration | Setup |
+| --- | --- |
+| Simulation Start | 0600 UTC 17 June & 0600 UTC 7 Aug 2022 |
+| Total run hours | 24 hours |
+| Initialization and boundary data | ERA-5 0.25-degree reanalysis ([link](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview)) |
+| Number of model nests | 2, one-way nesting only (no interactive nests), all nests share the same center lat/lon|
+| Map Projection | polar stereographic or similar model option |
+| Grid centers latitude; longitude | Grid-1: 29.4719; -95.0792 <br>Grid-2: 29.4719; -95.0792 |
+| Latitude and Longitude ranges of each domain (from north polar stereo grid) | Grid-1 <br> NW corner: 35.941, -103.376 <br> SW corner: 22.552, -102.347 <br> NE  corner: 35.941, -86.782 <br> SE  corner: 22.552, -87.812 <br> <br> Grid-2 <br> NW corner: 30.602, -96.378 <br> SW corner: 28.348, -96.350 <br> NE  corner: 30.602, -93.759 <br> SE  corner: 28.348, -93.788|
+| Horizontal grid spacing of each nest | Grid-1: 2000m; Grid-2: 500m |
+| Number of horizontal grid points in each nest |
+2000m nest: 750 x 750 grid points
+500m nest: 500 x 500 grid points
+(or closest numbers of grid points your model will allow) |
+Model Top
+Approx. 22 km / 50 hPa; please use provided specified levels
+Vertical levels
+95 levels (same as ACPC MIP; see list below in meters AGL)
+​​      -24,        24,        76,      130,      186,       245,
+     308,      373,     442,      514,      590,       669,
+     752,      840,     932,    1028,   1130,     1236,
+  1348,    1466,   1589,    1718,   1854,    1997,
+  2147,    2304,   2470,    2643,   2825,    3016,
+  3217,    3428,   3650,    3882,   4126,    4383,
+  4652,    4935,   5230,    5531,   5831,    6131,
+  6431,    6731,   7031,    7331,   7631,    7931,
+  8231,    8531,   8831,    9131,   9431,    9731, 10031, 10331, 10631, 10931, 11231, 11531, 11831, 12131, 12431, 12731, 13031, 13331, 13631, 13931, 14231, 14531, 14831, 15131, 15431, 15731, 16031, 16331, 16631, 16931, 17231, 17531, 17831, 18131, 18431, 18731, 19031, 19331, 19631, 19931, 20231, 20531, 20831, 21131, 21431, 21731, 22031
+Geographic / topography data
+Use highest resolution available
+Timestep
+Grid-1: 3 seconds, Grid-2: 1.5 seconds
+Or appropriate timesteps for your model.
+Coriolis
+On
+Convection
+No convection or cumulus schemes
+Land-surface model
+Please use an interactive land-surface model with a urban physics model if available
+Cloud microphysics
+Two-moment bulk or bin scheme with prognostic droplet number concentrations  
+Aerosol setup
+Two tiers: Tier 1: fixed aerosols at each model step; Tier 2: Interactive aerosols during the model integration processing optional. Initial aerosol profiles provided (see the aerosol section)
+Frequency of model output
+Grid-1: 60-min full simulation
+Grid-2: 10-min full simulation
+Grid-2:  2-min (for cell tracking) from
+ 1700 UTC event day - 0100 UTC next day
+ (i.e., 12 PM LT - 8 PM LT Houston, TX)
+Aerosol - radiation coupling
+Radiatively Inactive aerosols
+Diffusion / PBL
+Please use the best option for your model. Please call every timestep.
+LW and SW Radiation
+Please use the best option for your model. Please call every 60 seconds.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
 ## 6. Output of Model Variables
 Table 2 describes the necessary model variables to output and the associated units. If your model writes all variables for each grid and time to an individual file, then please provide the full output files (one file per grid per time for each grid). Please also provide a separate document that outlines (1) assumptions and parameters used to define the hydrometeor and aerosol size distributions and the aerosol Tier option, (2) mass-diameter relationships and fall speed equations for each hydrometeor class (or equivalent for your model), and (3) ice category properties. Please note the details regarding the output diagnostic microphysical process rates and their units. For models to participate in the process rate analysis, these rates need to be provided in the requested units.
 
