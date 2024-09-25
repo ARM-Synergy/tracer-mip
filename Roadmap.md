@@ -56,6 +56,7 @@ We ask all participants to use the following model configuration given in the ta
 
 ***Figure 3: Simulation 2-grid nested domains centered over the NEXRAD radar site near Houston, Texas.***
 
+
 <br>
 
 **Table 1: Model setup details**
@@ -85,10 +86,14 @@ We ask all participants to use the following model configuration given in the ta
 | Diffusion / PBL | Please use the best option for your model. Please call every timestep |
 | LW and SW Radiation | Please use the best option for your model. Please call every 60 seconds |
 
+<br>
+
 
 ## 6. Output of Model Variables
 Table 2 describes the necessary model variables to output and the associated units. If your model writes all variables for each grid and time to an individual file, then please provide the full output files (one file per grid per time for each grid). Please also provide a separate document that outlines (1) assumptions and parameters used to define the hydrometeor and aerosol size distributions and the aerosol Tier option, (2) mass-diameter relationships and fall speed equations for each hydrometeor class (or equivalent for your model), and (3) ice category properties. Please note the details regarding the output diagnostic microphysical process rates and their units. For models to participate in the process rate analysis, these rates need to be provided in the requested units.
 
+
+<br>
 
 **Table 2: Model outputs required to submit**
 |Model outputs|
@@ -131,6 +136,8 @@ Table 2 describes the necessary model variables to output and the associated uni
 |Autoconversion + Accretion *(conversion of cloud water to rain water through collision processes of liquid drops for bin models)*|
 |*For all microphysical process rates (aside from latent heating), units are (kg/kg/second) or (kg/kg/integrated-time) where “integrated-time” is the sum of the rates between output writing times. For example, if output files are written every 2-minutes, the process rates are the integrated sum (at each grid cell) over that 2-minute period of time. “Integrated-time” is preferred so that the average rate between model output writing time can be computed. Please be clear which units are used for process rates.|
 
+<br>
+
 
 ## 7. Data Submission and Timeline
 Data storage will be provided by the DOE, and we are in the process of establishing this storage space and granting user access. Detailed  information about data submission will be provided to the participants. Please let Steve Saleeby (Stephen.Saleeby@colostate.edu) and Jiwen Fan (fanj@anl.gov) know if you want to participate so that you can receive further guidance from us about this MIP.
@@ -141,6 +148,8 @@ Data storage will be provided by the DOE, and we are in the process of establish
 ## 8. Aerosol Initialization
 The aerosol initial conditions for each case have been constructed via a combination of (1) the surface aerosol particle size distributions from the SMPS at the TRACER AMF1 site in LaPorte, TX (courtesy of Tamanna Subba and Chongai Kuang from BNL) and (2) the aerosol vertical shape profile derived from coincident micropulse lidar and radiosonde data that are used to compute the cloud-free aerosol backscatter coefficient profile (courtesy of Bo Chen, Anita Rapp, & Sarah Brooks from Texas A&M Univ). For details, please refer to Chen et al. (2024). The 2-mode aerosol size distribution is shown in Table 3 and Figure 4 with an ultrafine aerosol mode peaking at 30 nm (June 17) and 50 nm (Aug. 7) in diameter, and an accumulation mode peaking at 135 nm (June 17) and 175 nm (Aug. 7). Aerosol mode characteristics for each case are shown in Appendices A & B and summarized in Table 3.
 
+
+<br>
 
 **Table 3: The 2-mode aerosol size distribution specification**
 
@@ -162,7 +171,7 @@ The left panel of Figure 4, below, shows the idealized vertical profile of norma
 
 The shape profile in the left panel above is represented by the following function fit to the dry aerosol backscatter (and then scaled from 0 to 1):
 
-<<<<< Equation-1
+**<<<<< Equation-1**
 
 The aerosol surface concentrations in # mg<sup>-1</sup> were then applied to the idealized vertical shape profile (Figure 4, left) to arrive at the case study control simulation shape profiles in Figure 4 (center, right). The vertical profiles apply an additional constraint such that the total (mode-1 + mode-2) number concentration does not drop below 50 mg<sup>-1</sup> at any altitude and scales with the surface aerosol number concentrations. Details of this application can be found in the Jupyter notebook linked below.
 
