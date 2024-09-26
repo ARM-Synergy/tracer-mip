@@ -1,4 +1,3 @@
-# Participants
+# Modeling groups
 
-## Modeling groups
 
