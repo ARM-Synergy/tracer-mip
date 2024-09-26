@@ -280,7 +280,7 @@ van den Heever, S.C., P.J. Marinescu, M. Heikenfeld, B. White, A. Fridlind, P. S
 
 
 
-## Participants:
+## Contributors:
 
 Jiwen Fan*,#, Stephen Saleeby*, Michael Jensen #, Susan van den Heever, Pavlos Kollias, Tamanna Subba, Chongai Kuang, Bo Chen, Anita D. Rapp, Sarah D. Brooks, Maria Zawadowicz, John Mejia, and Soumya Samanta 
 
