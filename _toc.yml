@@ -4,6 +4,8 @@ parts:
 - caption: Project Information
   chapters: 
     - file: Roadmap.md
+- caption: PDF version of the Roadmap
+  chapters: 
 - caption: Participants
   chapters: 
     - file: Participants.md
