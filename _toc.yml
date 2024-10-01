@@ -6,6 +6,7 @@ parts:
     - file: Roadmap.md
 - caption: PDF version of the Roadmap
   chapters: 
+    - file:  
 - caption: Participants
   chapters: 
     - file: Participants.md
