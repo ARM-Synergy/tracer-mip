@@ -1,3 +1,9 @@
+---
+downloads:
+  - file: ./TRACER-MIP-ROADMAP-2024_Sep30-Final.pdf
+    title: A PDF of this document
+---
+
 # Tracking Aerosol Convection Interaction Experiment (TRACER) Model Intercomparison Project (MIP) Roadmap
 
 
