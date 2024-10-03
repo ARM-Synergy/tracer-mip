@@ -1,4 +1,4 @@
-name: arm-cookbook-dev
+name: tracer-mip-dev
 channels:
   - conda-forge
   - defaults
