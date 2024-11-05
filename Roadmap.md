@@ -71,7 +71,7 @@ We ask all participants to use the following model configuration given in the ta
 | --- | --- |
 | Simulation Start | 0600 UTC 17 June & 0600 UTC 7 Aug 2022 |
 | Total run hours | 24 hours |
-| Initialization and boundary data | ERA-5 0.25-degree reanalysis ([link](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview)) |
+| Initialization and boundary data | 3-hrly ERA-5 0.25-degree reanalysis ([link](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview)) |
 | Number of model nests | 2, one-way nesting only (no interactive nests), all nests share the same center lat/lon|
 | Map Projection | polar stereographic or similar model option |
 | Grid centers latitude; longitude | Grid-1: 29.4719; -95.0792 <br>Grid-2: 29.4719; -95.0792 |
