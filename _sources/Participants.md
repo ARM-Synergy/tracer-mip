@@ -1,4 +1,4 @@
-# Modeling groups
+## Modeling groups
 
 | Name / group |	Institution | Email | Model / version	| Microphysics	| Note (any information you want to include here about aerosol and cloud microphysics treatment) |
 | --- | --- | --- | --- | --- | --- |
@@ -16,7 +16,7 @@
 | Yunyan Zhang,  <br> Hsi-Yen Ma, <br> Jishi Zhang, <br> Peter Andrew Bogenschutz | LLNL | zhang25@llnl.gov, <br> ma21@llnl.gov, <br> zhang73@llnl.gov, <br> bogenschutz1@llnl.gov | DOE-SCREAM |  |  |
 | Paul Field, <br> Annica Ekman | Univ. Leeds, <br> Stockholm Univ. | p.field@leeds.ac.uk, <br> annica@misu.su.se |  |  |  |
 
-# Observational Groups
+## Observational Groups
 | Name / group |	Institution | Email	| Note (any information you want to include here about your contribution) |
 | --- | --- | --- | --- | 
 | Gijs de Boer | Univ. Colorado, Boulder | gijs.deboer@colorado.edu | We have limited UAS data for the first case (17 June), including 18 CopterSonde and 1 RAAVEN flights. However, I’d be happy to support broader (beyond UAS) data analysis needs, as able. |
