@@ -1,4 +1,4 @@
-# Gropus
+# Groups
 
 ## Modeling groups
 
