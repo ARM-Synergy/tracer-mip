@@ -146,7 +146,7 @@ Table 2 describes the necessary model variables to output and the associated uni
 
 
 ## 7. Data Submission and Timeline
-Data storage will be provided by the DOE National Energy Research Scientific Computing Center (NERSC) supercomputer, and we are in the process of establishing this storage space and granting user access. Detailed information about data submission will be provided to the participants. Please reach out to Steve Saleeby (Stephen.Saleeby@colostate.edu) and Jiwen Fan (fanj@anl.gov) if you want to participate so that you can receive further guidance from us about this MIP.  If you need computation time support from NERSC for participating in this activity, please let us know.  
+Data storage is provided by the DOE National Energy Research Scientific Computing Center (NERSC) supercomputer, and a Globus collabortion collection has been set for data transfer. Detailed information about data submission will be provided to the participants. Please reach out to Steve Saleeby (Stephen.Saleeby@colostate.edu) and Jiwen Fan (fanj@anl.gov) if you want to participate so that you can receive further guidance from us about this MIP.  If you need computation time support from NERSC for participating in this activity, please let us know.  
 
 ***Timeline:*** We plan to show some preliminary results in the next ACPC workshop (May 2025). For teams that wish to have their model results included in a TRACER-MIP preliminary presentation at the ACPC meeting, we need to receive data submissions by February 1, 2025. The final deadline for submitting TRACER-MIP model results is July 1, 2025.
 
