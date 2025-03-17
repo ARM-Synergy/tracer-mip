@@ -106,6 +106,7 @@ Table 2 describes the necessary model variables to output and the associated uni
 |---|
 |**Atmospheric State (3D)**|
 |Pressure (Pa or hPa)|
+|Temperature (K)|
 |Height (m)|
 |Air density (kg/m<sup>3</sup>)|
 |U-wind (m/s) (east is +)|
