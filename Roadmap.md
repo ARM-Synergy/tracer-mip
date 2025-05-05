@@ -134,7 +134,7 @@ Table 2 describes the necessary model variables to output and the associated uni
 |Aerosol number concentration (#/kg) (separately for all available aerosol modes) |
 |Aerosol effective radius or median radius of the distribution (m) (separately for all available aerosol modes)|
 |**Microphysical Process Rates**|
-|Latent heating and cooling (K/sec) *(heating +, cooling -)*|
+|Latent heating and cooling (K/sec) *(heating +, cooling -):* <br> *(this should be the net sum of heating/cooling rather than separate heating and cooling variables)*|
 |Liquid condensation, Liquid evaporation|
 |Ice deposition, Ice sublimation|
 |Melting, Freezing *(totals from various mechanisms)*|
