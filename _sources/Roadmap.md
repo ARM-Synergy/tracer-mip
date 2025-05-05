@@ -133,15 +133,17 @@ Table 2 describes the necessary model variables to output and the associated uni
 |Aerosol mass mixing ratio (kg/kg) (separately for all available aerosol modes) |
 |Aerosol number concentration (#/kg) (separately for all available aerosol modes) |
 |Aerosol effective radius or median radius of the distribution (m) (separately for all available aerosol modes)|
-|**Microphysical Process Rates**|
+|**Microphysical Process Rates (3D)**|
 |Latent heating and cooling (K/sec) *(heating +, cooling -):* <br> *(this should be the net sum of heating/cooling rather than separate heating and cooling variables)*|
-|Liquid condensation, Liquid evaporation|
-|Ice deposition, Ice sublimation|
-|Melting, Freezing *(totals from various mechanisms)*|
-|Cloud droplet nucleation, Ice crystal nucleation|
-|Riming of cloud droplets, Riming of rain drops (may be combined for bin models)|
-|Autoconversion + Accretion *(conversion of cloud water to rain water through collision processes of liquid drops for bin models)*|
-|*For all microphysical process rates (aside from latent heating), units are (kg/kg/second) or (kg/kg/integrated-time) where “integrated-time” is the sum of the rates between output writing times. For example, if output files are written every 2-minutes, the process rates are the integrated sum (at each grid cell) over that 2-minute period of time. “Integrated-time” is preferred so that the average rate between model output writing time can be computed. Please be clear which units are used for process rates.|
+|Liquid condensation, Liquid evaporation (kg/kg per output time interval): <br> *(separate variables for condensation and evaporation rather than the net sum of both)*|
+|Ice deposition, Ice sublimation (kg/kg per output time interval): <br> *(separate variables for deposition and sublimation rather than the net sum of both)*|
+|Melting, Freezing *(totals from various mechanisms)* kg/kg per output time interval:  <br> (for melting – should be total melting from all sources such as collisions and in situ melting) <br> (for freezing – should include all in-situ freezing of cloud droplet and raindrops including heterogenous freezing and homogeneous freezing of cloud droplets except riming)|
+|Cloud droplet nucleation (#/mg per output time interval) <br> (number mixing ratio of nucleated droplet rate)|
+|New ice crystal nucleation rate ((#/mg per output time interval): <br> (from all new ice crystal formation mechanisms including heterogenous ice nucleation, haze nucleation and homogeneous freezing of cloud droplets). This does not include secondary ice production. Please provide a list of the ice nucleation mechanisms that your model considers.|
+|Riming of cloud droplets (kg/kg per output time interval): <br> (this is the mass of cloud water removed from the cloud droplet category due to collection by ice species)|
+|Riming of rain drops (kg/kg per output time interval): <br> (may be combined with riming of cloud droplets for bin models) <br> (this is the mass of rain water removed from the rain category due to collection by ice species)|
+|Autoconversion + Accretion (kg/kg per output time interval): <br> *(this is the conversion of cloud water to rain water through collision processes of liquid drops)*|
+|*For all microphysical process rates (aside from latent heating), units are (kg/kg/second) or (kg/kg per output time interval) where “per output time interval” is the sum of the rates between output writing times. For example, if output files are written every 2-minutes, the process rates are the integrated sum (at each grid cell) over that 2-minute period of time. “Output time interval” is preferred so that the average rate between model output writing time can be computed. Please be clear which units are used for process rates.|
 
 <br>
 

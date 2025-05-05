@@ -573,23 +573,27 @@ document.write(`
 </tr>
 <tr class="row-even"><td><p>Aerosol effective radius or median radius of the distribution (m) (separately for all available aerosol modes)</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Microphysical Process Rates</strong></p></td>
+<tr class="row-odd"><td><p><strong>Microphysical Process Rates (3D)</strong></p></td>
 </tr>
 <tr class="row-even"><td><p>Latent heating and cooling (K/sec) <em>(heating +, cooling -):</em> <br> <em>(this should be the net sum of heating/cooling rather than separate heating and cooling variables)</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>Liquid condensation, Liquid evaporation</p></td>
+<tr class="row-odd"><td><p>Liquid condensation, Liquid evaporation (kg/kg per output time interval): <br> <em>(separate variables for condensation and evaporation rather than the net sum of both)</em></p></td>
 </tr>
-<tr class="row-even"><td><p>Ice deposition, Ice sublimation</p></td>
+<tr class="row-even"><td><p>Ice deposition, Ice sublimation (kg/kg per output time interval): <br> <em>(separate variables for deposition and sublimation rather than the net sum of both)</em></p></td>
 </tr>
-<tr class="row-odd"><td><p>Melting, Freezing <em>(totals from various mechanisms)</em></p></td>
+<tr class="row-odd"><td><p>Melting, Freezing <em>(totals from various mechanisms)</em> kg/kg per output time interval:  <br> (for melting – should be total melting from all sources such as collisions and in situ melting) <br> (for freezing – should include all in-situ freezing of cloud droplet and raindrops including heterogenous freezing and homogeneous freezing of cloud droplets except riming)</p></td>
 </tr>
-<tr class="row-even"><td><p>Cloud droplet nucleation, Ice crystal nucleation</p></td>
+<tr class="row-even"><td><p>Cloud droplet nucleation (#/mg per output time interval) <br> (number mixing ratio of nucleated droplet rate)</p></td>
 </tr>
-<tr class="row-odd"><td><p>Riming of cloud droplets, Riming of rain drops (may be combined for bin models)</p></td>
+<tr class="row-odd"><td><p>New ice crystal nucleation rate ((#/mg per output time interval): <br> (from all new ice crystal formation mechanisms including heterogenous ice nucleation, haze nucleation and homogeneous freezing of cloud droplets). This does not include secondary ice production. Please provide a list of the ice nucleation mechanisms that your model considers.</p></td>
 </tr>
-<tr class="row-even"><td><p>Autoconversion + Accretion <em>(conversion of cloud water to rain water through collision processes of liquid drops for bin models)</em></p></td>
+<tr class="row-even"><td><p>Riming of cloud droplets (kg/kg per output time interval): <br> (this is the mass of cloud water removed from the cloud droplet category due to collection by ice species)</p></td>
 </tr>
-<tr class="row-odd"><td><p>*For all microphysical process rates (aside from latent heating), units are (kg/kg/second) or (kg/kg/integrated-time) where “integrated-time” is the sum of the rates between output writing times. For example, if output files are written every 2-minutes, the process rates are the integrated sum (at each grid cell) over that 2-minute period of time. “Integrated-time” is preferred so that the average rate between model output writing time can be computed. Please be clear which units are used for process rates.</p></td>
+<tr class="row-odd"><td><p>Riming of rain drops (kg/kg per output time interval): <br> (may be combined with riming of cloud droplets for bin models) <br> (this is the mass of rain water removed from the rain category due to collection by ice species)</p></td>
+</tr>
+<tr class="row-even"><td><p>Autoconversion + Accretion (kg/kg per output time interval): <br> <em>(this is the conversion of cloud water to rain water through collision processes of liquid drops)</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>*For all microphysical process rates (aside from latent heating), units are (kg/kg/second) or (kg/kg per output time interval) where “per output time interval” is the sum of the rates between output writing times. For example, if output files are written every 2-minutes, the process rates are the integrated sum (at each grid cell) over that 2-minute period of time. “Output time interval” is preferred so that the average rate between model output writing time can be computed. Please be clear which units are used for process rates.</p></td>
 </tr>
 </tbody>
 </table>
