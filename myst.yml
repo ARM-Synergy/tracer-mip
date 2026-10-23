@@ -1,0 +1,22 @@
+version: 1
+project:
+  title: Cookbook Template
+  authors:
+    - name: ARM Development Team
+  github: ARM-Development/arm-cookbook-template
+  toc:
+    - file: README.md
+    - title: Project Information
+      children:
+        - file: Roadmap.md
+    - title: PDF version of the Roadmap
+      children:
+        - file: pdf_roadmap.ipynb
+    - title: Participants
+      children:
+        - file: Participants.md
+site:
+  options:
+    logo: notebooks/images/arm_logo.png
+    folders: true
+  template: book-theme
