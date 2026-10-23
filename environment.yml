@@ -4,7 +4,7 @@ channels:
   - defaults
   - pyviz
 dependencies:
-  - python=3.9
+  - python=3.14
   - arm_pyart
   - matplotlib
   - jupyterlab
@@ -16,5 +16,3 @@ dependencies:
   - pandas
   - fiona
   - pip
-  - pip:
-    - -r doc-requirements.txt
